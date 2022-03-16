@@ -53,6 +53,8 @@ header {
         font-size: 6em;
         color: white;
     }
+
+      
     a { 
         text-decoration: none;
         color: red;
@@ -91,32 +93,23 @@ $color-link-hover: #fcbe32;
 $black: #111111;
 
 body {
-  font-family: sans-serif;
   background-color: $black;
-}
-
-a {
-  color: $color-link;
-  
-  &:hover {
-    color: $color-link-hover;
-  }
 }
 
 button {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: 40px;
+  bottom: 30px;
   padding: 20px;
   font-weight: 700;
   font-size: 16px;
-  background-color: red;
+  background-color: rgb(206, 30, 30);
   color: white;
 }
 
 .screen {
+  z-index: -1;
   background-color: $color-text;
-  position: fixed;
   top: 50%;
   left: 50%;
   width: 100vw;
@@ -124,21 +117,21 @@ button {
   transform: translate(-50%, -50%);
   content: " ";
   overflow: hidden;
-  
   background: #16222A;
-  background: -webkit-linear-gradient(to left, #16222A , #3A6073);
-  background: linear-gradient(to left, #16222A , #3A6073);
   background-size: cover;
-  background-image: url(https://media1.giphy.com/media/3o7qE2KFaCY1xVIqu4/200w.gif?cid=82a1493bjz3en0uv5u0md8pa8vaiv4vtlagv4yfuumon5uf6&rid=200w.gif&ct=g);
-  opacity: .3;
-  color: $color-text;
+  background-image: url('../assets/gif.gif');
+
+  position:fixed;
+  overflow-y:scroll;
+  overflow-x:hidden;
+ 
 }
 
-@keyframes blink {
-  50% {
-    opacity: 0.0;
-  }
-}
-.blink {
-  animation: blink 1s step-start 0s infinite;
-}
+// @keyframes blink {
+//   50% {
+//     opacity: 0.0;
+//   }
+// }
+// .blink {
+//   animation: blink 1.2s step-start 0s infinite;
+// }

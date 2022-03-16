@@ -87,32 +87,23 @@ header nav .right ul a {
 }
 
 body {
-  font-family: sans-serif;
   background-color: #111111;
-}
-
-a {
-  color: #ff5f2e;
-}
-
-a:hover {
-  color: #fcbe32;
 }
 
 button {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: 40px;
+  bottom: 30px;
   padding: 20px;
   font-weight: 700;
   font-size: 16px;
-  background-color: red;
+  background-color: #ce1e1e;
   color: white;
 }
 
 .screen {
+  z-index: -1;
   background-color: #e1eef6;
-  position: fixed;
   top: 50%;
   left: 50%;
   width: 100vw;
@@ -122,28 +113,10 @@ button {
   content: " ";
   overflow: hidden;
   background: #16222A;
-  background: -webkit-gradient(linear, right top, left top, from(#16222A), to(#3A6073));
-  background: linear-gradient(to left, #16222A, #3A6073);
   background-size: cover;
-  background-image: url(https://media1.giphy.com/media/3o7qE2KFaCY1xVIqu4/200w.gif?cid=82a1493bjz3en0uv5u0md8pa8vaiv4vtlagv4yfuumon5uf6&rid=200w.gif&ct=g);
-  opacity: .3;
-  color: #e1eef6;
-}
-
-@-webkit-keyframes blink {
-  50% {
-    opacity: 0.0;
-  }
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0.0;
-  }
-}
-
-.blink {
-  -webkit-animation: blink 1s step-start 0s infinite;
-          animation: blink 1s step-start 0s infinite;
+  background-image: url("../assets/gif.gif");
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=styles.css.map */
