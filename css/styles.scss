@@ -2,6 +2,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    ::selection {
+        background: red; /* WebKit/Blink Browsers */
+      }
+      ::-moz-selection {
+        background: red; /* Gecko Browsers */
+      }
 }
 
 body { 
@@ -85,17 +92,7 @@ header {
 
 
 
-
-
-$color-text: #e1eef6;
-$color-link: #ff5f2e;
-$color-link-hover: #fcbe32;
-$black: #111111;
-
-body {
-  background-color: $black;
-}
-
+// screen css
 button {
   position: fixed;
   right: 40px;
@@ -105,6 +102,8 @@ button {
   font-size: 16px;
   background-color: rgb(206, 30, 30);
   color: white;
+  align-items: center;
+ 
 }
 
 .screen {
@@ -127,11 +126,11 @@ button {
  
 }
 
-// @keyframes blink {
-//   50% {
-//     opacity: 0.0;
-//   }
-// }
-// .blink {
-//   animation: blink 1.2s step-start 0s infinite;
-// }
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+.blink {
+  animation: blink 1.2s step-start 0s infinite;
+}

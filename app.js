@@ -39,10 +39,7 @@
     isTurnedOn = !isTurnedOn;
   }
   
-  // Initialize
   $(document).ready(buildTimeline);
-  
-  // Bindings
   $(document).on('click', SELECTOR_SWITCHER_TV, function() {
     toggleSwitcherTV();
   });
