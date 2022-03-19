@@ -10,7 +10,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.6.1/lodash.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-    
+
     <title>STRNGR</title>
 </head>
 <body>
@@ -28,38 +28,109 @@
                         </ul>
                     </div>
                     <div class="right">
-                        <ul>
-                            <a href="#"><li>Home</li></a>
+                        <ul class="header-items">
+                            <a href="index.html"><li>Home</li></a>
                             <a href="#"><li>About Us</li></a>
-                            <a href="#"><li>Contact</li></a>
                             <a href="#"><li>Services</li></a>
+                            <a href="#"><li>Contact</li></a>
                         </ul>
                     </div>
                 </nav>
             </header>
     
             <section id="s1">
-                <h1 id="sample"> < you desire , <br>
+                <h1 class="glitch"> < you desire , <br>
                     we design > 
                 </h1>
                <a href="#"><h3>< Start a project ></h3></a>
             </section>
     
             <section id="s2">
-    
+                <div class="s2-contents">
+                    <h2> < WE DESIGN YOUR DREAM > </h2>
+                    <div class="line"></div>
+                    <p>Your vision, your brand, your product, 
+                        your idea, It's worth working for. 
+                        We believe in creating opportunities for everyone despite 
+                        their status. Your dream It's worth fighting for. </p>
+
+                    <ul>
+                        <li>
+                            <img src="./assets/icons/one.png" alt="Picture of lightbulb">
+                            <p>Idea</p>
+                        </li>
+                        <li>
+                            <img src="./assets/icons/two.png" alt="Picture of pencil and ruler">
+                            <p>Design</p>
+                        </li>
+                        <li>
+                            <img src="./assets/icons/three.png" alt="Picture of code">
+                            <p>Development</p>
+                        </li>
+                        <li>
+                            <img src="./assets/icons/four.png" alt="Picture of a trophy">
+                            <p>Success</p>
+                        </li>
+                    </ul>
+                </div>
             </section>
-            <section id="s2">
-    
+
+            <section id="s3">
             </section>
-    
+
+            <section id="s4">
+                <h3>Recent Work</h3>
+
+                <div class="s4-image-container">
+                    <div class="row-one"></div>
+                    <div class="row-two"></div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer-container">
+
+                    <div class="footer-logo">
+                     <a href="index.html"><img src="./assets/logo.png" alt="Logo"></a>
+                    </div>
+                    <ul class="first-row">
+                        <h3>Other Links</h3>
+                        <li class="first">Home</li>
+                        <li>About Us</li>
+                        <li>Services</li>
+                        <li>Contact</li>
+                    </ul>
+                    <ul class="second-row">
+                        <h3>Social Media</h3>
+                        <li class="first">LinkedIn</li>
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                    </ul>
+                    <ul>
+                        <h3>Contact Us</h3>
+                        <li class="first">STRNGR@gmail.com</li>
+                        <li>55 55 55 55</li>
+                        <li>Street name</li>
+                        <li>Denmark</li>
+                    </ul>
+
+
+                </div>
+            </footer>
+
+
         </div>
     </div>
-    <button id="switcher-tv" class="blink cyber-button">ON / OFF</button>
-    
 
 
-    
+
+
+    <button id="switcher-tv" class="blink cyber-button" onclick="play()">ON / OFF</button>
+    <audio id="audio" src="./assets/vcr.mp3"></audio>
 
     <script src="app.js"></script>
+
+
 </body>
 </html>

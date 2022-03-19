@@ -1,3 +1,6 @@
+// base page css
+// ###############
+
 * { 
     box-sizing: border-box;
     margin: 0;
@@ -23,7 +26,7 @@ header {
             color: white;
             list-style: none;
             text-transform: uppercase;
-            font-size: .8em;
+            font-size: .9em;
         }
         display: flex;
         justify-content: space-between;
@@ -40,6 +43,15 @@ header {
                 display: flex;
                 li { 
                     margin-left: 40px;
+                    width: 80px;
+                    height: 30px;
+                    text-align: center;
+                    padding-top: 8px;
+                }
+
+                li:hover { 
+                  background-color: red;
+                  color: black;
                 }
                 a { 
                     text-decoration: none;
@@ -52,6 +64,7 @@ header {
 #s1 { 
     padding-left: 5em;
     padding-top: 6em;
+    padding-bottom: 15em;
 
     h1 { 
         text-transform: uppercase;
@@ -65,6 +78,7 @@ header {
         color: red;
         font-size: 1em;
         h3 { 
+            text-transform: uppercase;
             padding-top: 3em;
             float: right;
             padding-right: 4em;
@@ -73,24 +87,144 @@ header {
    
 }
 
-.box { 
-    position: absolute;
-    background: white;
-    background-attachment: fixed;
-    overflow: hidden;
-}
-
 #s2 { 
+  padding-top: 9em;
     width: 100%;
     height: 100vh;
+    color: white;
+
+    .s2-contents{ 
+     color: white;
+    }
+
+    h2 {
+      display: flex;
+      justify-content: center;
+    }
+
+    .line { 
+      display: block;
+      height: 1px;
+      width: 120px;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+
+      margin-top: 2em;
+    }
+
+    p { 
+      text-align: center;
+      width: 700px;
+      justify-content: center;
+      margin: auto;
+      padding-top: 3em;
+      font-size: 1em;
+      line-height: 25px;
+    }
+    ul {
+      padding-top: 12em;
+      padding-bottom: 10em;
+      display: flex;
+      justify-content: center;
+
+      li { 
+        list-style: none;
+
+        img { 
+          display: flex;
+          justify-content: center;
+          margin: auto;
+          height: 45px;
+        }
+        p { 
+          width: 250px;
+        }
+      }
+    }
+}
+
+#s3 {  
+  margin-top: 15em; 
+  width: 100vw;
+  height: 300px;
+  // background-color: black;
+  background-image: url(../assets/s3.jpg);
+  background-size: cover;
+  filter: saturate(0);
+  opacity: .5;
+}
+
+#s4 { 
+  margin-top: 15em; 
+  color: white;
+  height: 100vh;
+
+  h3 { 
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 2em;
+  }
+
+  .s4-image-container { 
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+footer { 
+  height: 180px;
+  background-color: rgb(22, 22, 22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-logo { 
+    margin-right: 20em;
+    img { 
+      height: 35px;
+    }
+  }
+
+  ul { 
+
+    h3 { 
+      font-size: .8em;
+    }
+
+    li { 
+      margin-top: 4px;
+      font-size: .8em;
+      list-style: none;
+    }
+    
+    .first  { 
+      padding-top: 1.6em;
+    }
+  }
+    .first-row  { 
+      padding-right: 5em;
+    }
+    .second-row  { 
+      padding-right: 5em;
+    }
+  
 }
 
 
 
+// vcr screen and blinking button css
+// ################
 
-
-
-// screen css
 button {
   position: fixed;
   right: 40px;
@@ -99,8 +233,8 @@ button {
   font-family: vcr;
   font-weight: 700;
   font-size: 16px;
-  background-color: rgb(206, 30, 30);
-  color: white;
+  background-color: white;
+  color: black;
   align-items: center;
  
 }
@@ -129,6 +263,178 @@ button {
     opacity: 0.0;
   }
 }
+
 .blink {
   animation: blink 1.2s step-start 0s infinite;
 }
+
+
+// main text glitch
+// ################
+
+.glitch{
+    font-weight: 800;
+    position: relative;
+    font-size: 100px;
+    padding: 30px;
+  }
+  .glitch::before, .glitch::after {
+    padding: 30px;
+    color: white;
+    content: "< You Des";
+    position: absolute;
+    background: black;
+    overflow: hidden;
+    top: 0;
+  }
+  .glitch::before {
+    left: 3px;
+    text-shadow: -2px 0 red;
+    animation-name: glitch-animation-1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
+  }
+.glitch::after {
+    left: -3px;
+    text-shadow: -2px 0 blue;
+    animation-name: glitch-animation-2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
+  }
+  
+  @keyframes glitch-animation-1 {
+    0% {
+      clip: rect(149px, 350px, 144px, 30px);
+    }
+    5% {
+      clip: rect(23px, 350px, 9px, 30px);
+    }
+    10% {
+      clip: rect(43px, 350px, 132px, 30px);
+    }
+    15% {
+      clip: rect(57px, 350px, 77px, 30px);
+    }
+    20% {
+      clip: rect(114px, 350px, 147px, 30px);
+    }
+    25% {
+      clip: rect(33px, 350px, 45px, 30px);
+    }
+    30% {
+      clip: rect(93px, 350px, 42px, 30px);
+    }
+    35% {
+      clip: rect(42px, 350px, 53px, 30px);
+    }
+    40% {
+      clip: rect(91px, 350px, 101px, 30px);
+    }
+    45% {
+      clip: rect(115px, 350px, 23px, 30px);
+    }
+    50% {
+      clip: rect(36px, 350px, 31px, 30px);
+    }
+    55% {
+      clip: rect(38px, 350px, 133px, 30px);
+    }
+    60% {
+      clip: rect(56px, 350px, 4px, 30px);
+    }
+    65% {
+      clip: rect(41px, 350px, 116px, 30px);
+    }
+    70% {
+      clip: rect(86px, 350px, 17px, 30px);
+    }
+    75% {
+      clip: rect(100px, 350px, 138px, 30px);
+    }
+    80% {
+      clip: rect(116px, 350px, 42px, 30px);
+    }
+    85% {
+      clip: rect(37px, 350px, 138px, 30px);
+    }
+    90% {
+      clip: rect(54px, 350px, 70px, 30px);
+    }
+    95% {
+      clip: rect(18px, 350px, 123px, 30px);
+    }
+    100% {
+      clip: rect(141px, 350px, 4px, 30px);
+    }
+  }
+  @keyframes glitch-animation-2 {
+    0% {
+      clip: rect(93px, 350px, 96px, 30px);
+    }
+    5% {
+      clip: rect(86px, 350px, 103px, 30px);
+    }
+    10% {
+      clip: rect(47px, 350px, 53px, 30px);
+    }
+    15% {
+      clip: rect(36px, 350px, 130px, 30px);
+    }
+    20% {
+      clip: rect(115px, 350px, 57px, 30px);
+    }
+    25% {
+      clip: rect(35px, 350px, 61px, 30px);
+    }
+    30% {
+      clip: rect(20px, 350px, 136px, 30px);
+    }
+    35% {
+      clip: rect(90px, 350px, 102px, 30px);
+    }
+    40% {
+      clip: rect(64px, 350px, 33px, 30px);
+    }
+    45% {
+      clip: rect(57px, 350px, 123px, 30px);
+    }
+    50% {
+      clip: rect(129px, 350px, 103px, 30px);
+    }
+    55% {
+      clip: rect(85px, 350px, 90px, 30px);
+    }
+    60% {
+      clip: rect(62px, 350px, 64px, 30px);
+    }
+    65% {
+      clip: rect(108px, 350px, 46px, 30px);
+    }
+    70% {
+      clip: rect(97px, 350px, 86px, 30px);
+    }
+    75% {
+      clip: rect(81px, 350px, 65px, 30px);
+    }
+    80% {
+      clip: rect(15px, 350px, 132px, 30px);
+    }
+    85% {
+      clip: rect(99px, 350px, 25px, 30px);
+    }
+    90% {
+      clip: rect(76px, 350px, 80px, 30px);
+    }
+    95% {
+      clip: rect(50px, 350px, 94px, 30px);
+    }
+    100% {
+      clip: rect(77px, 350px, 136px, 30px);
+    }
+  }

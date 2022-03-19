@@ -1,3 +1,5 @@
+// on / off screen
+// ###############
 
 (function() {
 
@@ -29,6 +31,7 @@
 
   function toggleSwitcherTV() {
     if (isTurnedOn) {
+      // yes();
       timeline.restart();
     }
     
@@ -38,11 +41,19 @@
     
     isTurnedOn = !isTurnedOn;
   }
-  
+
   $(document).ready(buildTimeline);
   $(document).on('click', SELECTOR_SWITCHER_TV, function() {
     toggleSwitcherTV();
   });
 })();
 
+// vcr audio
+// ###############
+
+function play() {
+  var audio = document.getElementById("audio");
+  audio.preload = 'auto';
+  audio.play();
+}
 
