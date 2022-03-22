@@ -1,4 +1,4 @@
-// base page css
+// index page and main css
 // ###############
 
 * { 
@@ -8,8 +8,9 @@
 }
 
 body { 
-    background-color: #161616;
+    background-color: #000000;
     font-family: vcr;
+    animation: flicker 1.2s;
 }
 
 @font-face {
@@ -53,6 +54,9 @@ header {
                   background-color: red;
                   color: black;
                 }
+
+             
+
                 a { 
                     text-decoration: none;
                 }
@@ -88,7 +92,7 @@ header {
 }
 
 #s2 { 
-  padding-top: 9em;
+  padding-top: 10em;
     width: 100%;
     height: 100vh;
     color: white;
@@ -116,11 +120,11 @@ header {
 
     p { 
       text-align: center;
-      width: 700px;
+      width: 720px;
       justify-content: center;
       margin: auto;
       padding-top: 3em;
-      font-size: 1em;
+      font-size: 1.1em;
       line-height: 25px;
     }
     ul {
@@ -149,17 +153,30 @@ header {
   margin-top: 15em; 
   width: 100vw;
   height: 300px;
-  // background-color: black;
-  background-image: url(../assets/s3.jpg);
-  background-size: cover;
-  filter: saturate(0);
-  opacity: .5;
+  background-image: url(../assets/s3.png);
+  display: flex;
+  p { 
+    color: white;
+    width: 650px;
+    text-align: center;
+    margin: auto;
+    font-size: 1.2em;
+  }
 }
 
 #s4 { 
+  overflow: hidden;
   margin-top: 15em; 
   color: white;
-  height: 100vh;
+  height: 200vh;
+
+  li { 
+    list-style: none;
+  }
+
+  li:hover { 
+    opacity: .7;
+  }
 
   h3 { 
     display: flex;
@@ -172,12 +189,57 @@ header {
     display: flex;
     justify-content: center;
     margin: auto;
+    padding-top: 10em;
+    overflow: hidden;
+    .row-one { 
+      padding-right: 8em;
+    }
+
+    .s4-one { 
+      height: 500px;
+      width: 300px;
+      background-color: gray;
+      background-image: url(../assets/s4-one.png);
+      // background-size: cover;
+      cursor: pointer;
+    }
+
+    .s4-two { 
+      margin-top: 10em;
+      height: 350px;
+      width: 300px;
+      background-color: gray;
+      background-image: url(../assets/s4-two.png);
+      // background-size: cover;
+      cursor: pointer;
+    }
+
+    .s4-three { 
+      height: 350px;
+      width: 300px;
+      background-color: gray;
+      background-image: url(../assets/s4-two.png);
+      // background-size: cover;
+      cursor: pointer;
+    }
+
+    .s4-four { 
+      margin-top: 10em;
+      height: 500px;
+      width: 300px;
+      background-color: gray;
+      background-image: url(../assets/s4-one.png);
+      // background-size: cover;
+      cursor: pointer;
+    }
+
   }
 }
 
 footer { 
-  height: 180px;
-  background-color: rgb(22, 22, 22);
+
+  height: 200px;
+  background-color: rgba(15, 15, 15, 0.473);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,7 +251,7 @@ footer {
   }
 
   .footer-logo { 
-    margin-right: 20em;
+    margin-right: 25em;
     img { 
       height: 35px;
     }
@@ -198,17 +260,19 @@ footer {
   ul { 
 
     h3 { 
-      font-size: .8em;
+      font-size: .7em;
     }
 
     li { 
-      margin-top: 4px;
-      font-size: .8em;
+      text-transform: uppercase;
+      margin-top: 6px;
+      font-size: .6em;
       list-style: none;
+      cursor: pointer;
     }
     
     .first  { 
-      padding-top: 1.6em;
+      padding-top: 1.2em;
     }
   }
     .first-row  { 
@@ -220,6 +284,41 @@ footer {
   
 }
 
+// body on load flicker
+// ################
+  
+// @keyframes flicker { 
+
+//   // 0% { 
+//   //   opacity: 0;
+//   // }
+
+//   35% { 
+//     opacity: .2;
+//   }
+
+//   40% { 
+//     opacity: 0;
+//   }
+
+//   50% { 
+//     opacity: .4;
+//   }
+
+//   60% { 
+//     opacity: 0;
+//   }
+
+//   100% { 
+//     opacity: 1;
+//   }
+// }
+
+
+
+
+
+
 
 
 // vcr screen and blinking button css
@@ -227,8 +326,8 @@ footer {
 
 button {
   position: fixed;
-  right: 40px;
-  bottom: 30px;
+  right: 90px;
+  bottom: 50px;
   padding: 20px;
   font-family: vcr;
   font-weight: 700;
@@ -437,4 +536,20 @@ button {
     100% {
       clip: rect(77px, 350px, 136px, 30px);
     }
+  }
+
+  // ABOUT PAGE
+  // #################
+
+  #s1-about { 
+    height: 100vh;
+    
+    .main-text-about { 
+      padding-top: 3em;
+      font-size: 3em;
+      display: flex;
+      justify-content: center;
+      color: white;
+    }
+
   }

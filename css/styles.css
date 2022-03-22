@@ -6,8 +6,10 @@
 }
 
 body {
-  background-color: #161616;
+  background-color: #000000;
   font-family: vcr;
+  -webkit-animation: flicker 1.2s;
+          animation: flicker 1.2s;
 }
 
 @font-face {
@@ -91,7 +93,7 @@ header nav .right ul a {
 }
 
 #s2 {
-  padding-top: 9em;
+  padding-top: 10em;
   width: 100%;
   height: 100vh;
   color: white;
@@ -127,13 +129,13 @@ header nav .right ul a {
 
 #s2 p {
   text-align: center;
-  width: 700px;
+  width: 720px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
   padding-top: 3em;
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 25px;
 }
 
@@ -171,17 +173,33 @@ header nav .right ul a {
   margin-top: 15em;
   width: 100vw;
   height: 300px;
-  background-image: url(../assets/s3.jpg);
-  background-size: cover;
-  -webkit-filter: saturate(0);
-          filter: saturate(0);
-  opacity: .5;
+  background-image: url(../assets/s3.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#s3 p {
+  color: white;
+  width: 650px;
+  text-align: center;
+  margin: auto;
+  font-size: 1.2em;
 }
 
 #s4 {
+  overflow: hidden;
   margin-top: 15em;
   color: white;
-  height: 100vh;
+  height: 200vh;
+}
+
+#s4 li {
+  list-style: none;
+}
+
+#s4 li:hover {
+  opacity: .7;
 }
 
 #s4 h3 {
@@ -203,11 +221,51 @@ header nav .right ul a {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
+  padding-top: 10em;
+  overflow: hidden;
+}
+
+#s4 .s4-image-container .row-one {
+  padding-right: 8em;
+}
+
+#s4 .s4-image-container .s4-one {
+  height: 500px;
+  width: 300px;
+  background-color: gray;
+  background-image: url(../assets/s4-one.png);
+  cursor: pointer;
+}
+
+#s4 .s4-image-container .s4-two {
+  margin-top: 10em;
+  height: 350px;
+  width: 300px;
+  background-color: gray;
+  background-image: url(../assets/s4-two.png);
+  cursor: pointer;
+}
+
+#s4 .s4-image-container .s4-three {
+  height: 350px;
+  width: 300px;
+  background-color: gray;
+  background-image: url(../assets/s4-two.png);
+  cursor: pointer;
+}
+
+#s4 .s4-image-container .s4-four {
+  margin-top: 10em;
+  height: 500px;
+  width: 300px;
+  background-color: gray;
+  background-image: url(../assets/s4-one.png);
+  cursor: pointer;
 }
 
 footer {
-  height: 180px;
-  background-color: #161616;
+  height: 200px;
+  background-color: rgba(15, 15, 15, 0.473);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,7 +288,7 @@ footer .footer-container {
 }
 
 footer .footer-logo {
-  margin-right: 20em;
+  margin-right: 25em;
 }
 
 footer .footer-logo img {
@@ -238,17 +296,19 @@ footer .footer-logo img {
 }
 
 footer ul h3 {
-  font-size: .8em;
+  font-size: .7em;
 }
 
 footer ul li {
-  margin-top: 4px;
-  font-size: .8em;
+  text-transform: uppercase;
+  margin-top: 6px;
+  font-size: .6em;
   list-style: none;
+  cursor: pointer;
 }
 
 footer ul .first {
-  padding-top: 1.6em;
+  padding-top: 1.2em;
 }
 
 footer .first-row {
@@ -261,8 +321,8 @@ footer .second-row {
 
 button {
   position: fixed;
-  right: 40px;
-  bottom: 30px;
+  right: 90px;
+  bottom: 50px;
   padding: 20px;
   font-family: vcr;
   font-weight: 700;
@@ -622,5 +682,21 @@ button {
   100% {
     clip: rect(77px, 350px, 136px, 30px);
   }
+}
+
+#s1-about {
+  height: 100vh;
+}
+
+#s1-about .main-text-about {
+  padding-top: 3em;
+  font-size: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */
