@@ -70,7 +70,6 @@ header nav .right ul a {
 #s1 {
   padding-left: 5em;
   padding-top: 6em;
-  padding-bottom: 15em;
 }
 
 #s1 h1 {
@@ -92,291 +91,52 @@ header nav .right ul a {
   padding-right: 4em;
 }
 
-#s2 {
-  padding-top: 10em;
-  width: 100%;
-  height: 100vh;
-  color: white;
+#s1 .icon {
+  position: relative;
+  margin: 150px auto 0 auto;
 }
 
-#s2 .s2-contents {
-  color: white;
+#s1 .icon svg {
+  width: 30px;
+  margin: 10px auto;
+  padding-bottom: 2.5em;
 }
 
-#s2 h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#s1 .icon svg .arrow {
+  -webkit-animation: anim .35s ease-in alternate infinite;
+          animation: anim .35s ease-in alternate infinite;
 }
 
-#s2 .line {
-  display: block;
-  height: 1px;
-  width: 120px;
-  background-color: red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: auto;
-  margin-top: 2em;
-}
-
-#s2 p {
-  text-align: center;
-  width: 720px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: auto;
-  padding-top: 3em;
-  font-size: 1.1em;
-  line-height: 25px;
-}
-
-#s2 ul {
-  padding-top: 12em;
-  padding-bottom: 10em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#s2 ul li {
-  list-style: none;
-}
-
-#s2 ul li img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: auto;
-  height: 45px;
-}
-
-#s2 ul li p {
-  width: 250px;
-}
-
-#s3 {
-  margin-top: 15em;
-  width: 100vw;
-  height: 300px;
-  background-image: url(../assets/s3.png);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#s3 p {
-  color: white;
-  width: 650px;
-  text-align: center;
-  margin: auto;
-  font-size: 1.2em;
-}
-
-#s4 {
-  overflow: hidden;
-  margin-top: 15em;
-  color: white;
-  height: 200vh;
-}
-
-#s4 li {
-  list-style: none;
-}
-
-#s4 li:hover {
-  opacity: .7;
-}
-
-#s4 h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: auto;
-  font-size: 2em;
-}
-
-#s4 .s4-image-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: auto;
-  padding-top: 10em;
-  overflow: hidden;
-}
-
-#s4 .s4-image-container .row-one {
-  padding-right: 8em;
-}
-
-#s4 .s4-image-container .s4-one {
-  height: 500px;
-  width: 300px;
-  background-color: gray;
-  background-image: url(../assets/s4-one.png);
-  cursor: pointer;
-}
-
-#s4 .s4-image-container .s4-two {
-  margin-top: 10em;
-  height: 350px;
-  width: 300px;
-  background-color: gray;
-  background-image: url(../assets/s4-two.png);
-  cursor: pointer;
-}
-
-#s4 .s4-image-container .s4-three {
-  height: 350px;
-  width: 300px;
-  background-color: gray;
-  background-image: url(../assets/s4-two.png);
-  cursor: pointer;
-}
-
-#s4 .s4-image-container .s4-four {
-  margin-top: 10em;
-  height: 500px;
-  width: 300px;
-  background-color: gray;
-  background-image: url(../assets/s4-one.png);
-  cursor: pointer;
-}
-
-footer {
-  height: 200px;
-  background-color: rgba(15, 15, 15, 0.473);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: white;
-}
-
-footer .footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer .footer-logo {
-  margin-right: 25em;
-}
-
-footer .footer-logo img {
-  height: 35px;
-}
-
-footer ul h3 {
-  font-size: .7em;
-}
-
-footer ul li {
-  text-transform: uppercase;
-  margin-top: 6px;
-  font-size: .6em;
-  list-style: none;
-  cursor: pointer;
-}
-
-footer ul .first {
-  padding-top: 1.2em;
-}
-
-footer .first-row {
-  padding-right: 5em;
-}
-
-footer .second-row {
-  padding-right: 5em;
-}
-
-button {
-  position: fixed;
-  right: 90px;
-  bottom: 50px;
-  padding: 20px;
-  font-family: vcr;
-  font-weight: 700;
-  font-size: 16px;
-  background-color: white;
-  color: black;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.screen {
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  height: 100vh;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  content: " ";
-  overflow: hidden;
-  background: #16222A;
-  background-size: cover;
-  background-image: url("../assets/gif.gif");
-  position: fixed;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-@-webkit-keyframes blink {
-  50% {
-    opacity: 0.0;
+@-webkit-keyframes anim {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
 }
 
-@keyframes blink {
-  50% {
-    opacity: 0.0;
+@keyframes anim {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
 }
 
-.blink {
-  -webkit-animation: blink 1.2s step-start 0s infinite;
-          animation: blink 1.2s step-start 0s infinite;
-}
-
-.glitch {
+#s1 .glitch {
   font-weight: 800;
   position: relative;
   font-size: 100px;
   padding: 30px;
 }
 
-.glitch::before, .glitch::after {
+#s1 .glitch::before, #s1 .glitch::after {
   padding: 30px;
   color: white;
   content: "< You Des";
@@ -386,7 +146,7 @@ button {
   top: 0;
 }
 
-.glitch::before {
+#s1 .glitch::before {
   left: 3px;
   text-shadow: -2px 0 red;
   -webkit-animation-name: glitch-animation-1;
@@ -403,7 +163,7 @@ button {
           animation-direction: reverse-alternate;
 }
 
-.glitch::after {
+#s1 .glitch::after {
   left: -3px;
   text-shadow: -2px 0 blue;
   -webkit-animation-name: glitch-animation-2;
@@ -684,8 +444,289 @@ button {
   }
 }
 
-#s1-about {
+#s2 {
+  width: 100%;
   height: 100vh;
+  color: white;
+}
+
+#s2 .s2-contents {
+  color: white;
+}
+
+#s2 h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#s2 .line {
+  display: block;
+  height: 1px;
+  width: 120px;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  margin-top: 2em;
+}
+
+#s2 p {
+  text-align: center;
+  width: 720px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding-top: 3em;
+  font-size: 1.1em;
+  line-height: 25px;
+}
+
+#s2 ul {
+  padding-top: 12em;
+  padding-bottom: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#s2 ul li {
+  list-style: none;
+}
+
+#s2 ul li img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  height: 45px;
+}
+
+#s2 ul li p {
+  width: 250px;
+}
+
+#s3 {
+  margin-top: 5em;
+  width: 100vw;
+  height: 300px;
+  background-image: url(../assets/s3.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#s3 p {
+  color: white;
+  width: 650px;
+  text-align: center;
+  margin: auto;
+  font-size: 1.2em;
+}
+
+#s4 {
+  overflow: hidden;
+  margin-top: 14em;
+  color: white;
+  height: 200vh;
+}
+
+#s4 li {
+  list-style: none;
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+  opacity: .8;
+}
+
+#s4 li:hover {
+  -webkit-filter: saturate(1);
+          filter: saturate(1);
+  opacity: 1;
+}
+
+#s4 h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  font-size: 2em;
+}
+
+#s4 .s4-image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding-top: 10em;
+  overflow: hidden;
+}
+
+#s4 .s4-image-container .row-one {
+  padding-right: 8em;
+}
+
+#s4 .s4-image-container .s4-one {
+  height: 500px;
+  width: 300px;
+  background-color: gray;
+  background-image: url(../assets/s4-one.png);
+  cursor: pointer;
+}
+
+#s4 .s4-image-container .s4-two {
+  margin-top: 10em;
+  height: 350px;
+  width: 300px;
+  background-color: gray;
+  background-image: url(../assets/s4-two.png);
+  cursor: pointer;
+}
+
+#s4 .s4-image-container .s4-three {
+  height: 350px;
+  width: 300px;
+  background-color: gray;
+  background-image: url(../assets/s4-two.png);
+  cursor: pointer;
+}
+
+#s4 .s4-image-container .s4-four {
+  margin-top: 10em;
+  height: 500px;
+  width: 300px;
+  background-color: gray;
+  background-image: url(../assets/s4-one.png);
+  cursor: pointer;
+}
+
+footer {
+  height: 200px;
+  background-color: rgba(30, 30, 30, 0.473);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+footer .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-logo {
+  margin-right: 25em;
+}
+
+footer .footer-logo img {
+  height: 35px;
+}
+
+footer ul h3 {
+  font-size: .7em;
+}
+
+footer ul li {
+  text-transform: uppercase;
+  margin-top: 6px;
+  font-size: .6em;
+  list-style: none;
+  cursor: pointer;
+}
+
+footer ul .first {
+  padding-top: 1.2em;
+}
+
+footer .first-row {
+  padding-right: 5em;
+}
+
+footer .second-row {
+  padding-right: 5em;
+}
+
+button {
+  position: fixed;
+  right: 90px;
+  bottom: 50px;
+  padding: 20px;
+  font-family: vcr;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.screen {
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  content: " ";
+  overflow: hidden;
+  background: #16222A;
+  background-size: cover;
+  background-image: url("../assets/gif.gif");
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+
+.blink {
+  -webkit-animation: blink 1.2s step-start 0s infinite;
+          animation: blink 1.2s step-start 0s infinite;
+}
+
+#s1-about {
+  height: 55vh;
 }
 
 #s1-about .main-text-about {
@@ -698,5 +739,971 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
+}
+
+#s1-about .line {
+  display: block;
+  height: 1px;
+  width: 120px;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  margin-top: 3em;
+}
+
+#s2-about {
+  height: 70vh;
+  overflow: hidden;
+}
+
+#s2-about .s2-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#s2-about .s2-container .side-one .row-one .one img {
+  height: 300px;
+}
+
+#s2-about .s2-container .side-two {
+  padding-left: 5em;
+}
+
+#s2-about .s2-container .side-two .two p {
+  width: 400px;
+  color: white;
+  text-align: left;
+  font-size: 1.2em;
+  line-height: 22px;
+}
+
+#s2-about .s2-container .side-two .two .line {
+  height: 1px;
+  width: 120px;
+  background-color: white;
+  margin-top: 3em;
+}
+
+#s2-about .s2-container .side-two .two a {
+  text-decoration: none;
+  color: red;
+}
+
+#s2-about .s2-container .side-two .two a h3 {
+  text-transform: uppercase;
+  padding-top: 3em;
+  padding-right: 4em;
+}
+
+#s3-about {
+  height: 350vh;
+  color: white;
+}
+
+#s3-about .top-part {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+#s3-about .top-part .s3-about-title {
+  color: #00FFFF;
+  font-size: 2em;
+}
+
+#s3-about .top-part .line {
+  margin: auto;
+  height: 1px;
+  width: 120px;
+  background-color: white;
+  margin-top: 3em;
+}
+
+#s3-about .us {
+  padding-top: 3em;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+#s3-about .us .julija {
+  padding-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#s3-about .us .julija .photo img {
+  height: 450px;
+}
+
+#s3-about .us .julija .text {
+  padding-left: 8em;
+}
+
+#s3-about .us .julija .text span {
+  color: red;
+}
+
+#s3-about .us .julija .text .line {
+  height: 1px;
+  width: 220px;
+  background-color: white;
+  margin-top: 1em;
+}
+
+#s3-about .us .julija .text h2 {
+  padding-top: 1.6em;
+  color: #00FFFF;
+}
+
+#s3-about .us .julija .text p {
+  padding-top: 1.4em;
+  width: 400px;
+  line-height: 30px;
+}
+
+#s3-about .us .nicky {
+  padding-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#s3-about .us .nicky .photo img {
+  height: 450px;
+}
+
+#s3-about .us .nicky .text {
+  text-align: right;
+  padding-right: 8em;
+}
+
+#s3-about .us .nicky .text span {
+  color: red;
+}
+
+#s3-about .us .nicky .text .line {
+  height: 1px;
+  width: 220px;
+  background-color: white;
+  margin-top: 1em;
+  float: right;
+}
+
+#s3-about .us .nicky .text h2 {
+  padding-top: 1.6em;
+  color: #00FFFF;
+}
+
+#s3-about .us .nicky .text p {
+  padding-top: 1.4em;
+  width: 400px;
+  line-height: 30px;
+}
+
+#s3-about .us .ralfs {
+  padding-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#s3-about .us .ralfs .photo img {
+  height: 450px;
+}
+
+#s3-about .us .ralfs .text {
+  padding-left: 8em;
+}
+
+#s3-about .us .ralfs .text span {
+  color: red;
+}
+
+#s3-about .us .ralfs .text .line {
+  height: 1px;
+  width: 220px;
+  background-color: white;
+  margin-top: 1em;
+}
+
+#s3-about .us .ralfs .text h2 {
+  padding-top: 1.6em;
+  color: #00FFFF;
+}
+
+#s3-about .us .ralfs .text p {
+  padding-top: 1.4em;
+  width: 400px;
+  line-height: 30px;
+}
+
+#s3-about .us .philip {
+  padding-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#s3-about .us .philip .photo img {
+  height: 450px;
+}
+
+#s3-about .us .philip .text {
+  text-align: right;
+  padding-right: 8em;
+}
+
+#s3-about .us .philip .text span {
+  color: red;
+}
+
+#s3-about .us .philip .text .line {
+  height: 1px;
+  width: 220px;
+  background-color: white;
+  margin-top: 1em;
+  float: right;
+}
+
+#s3-about .us .philip .text h2 {
+  padding-top: 1.6em;
+  color: #00FFFF;
+}
+
+#s3-about .us .philip .text p {
+  padding-top: 1.4em;
+  width: 400px;
+  line-height: 30px;
+}
+
+#s1-services {
+  height: 90vh;
+  padding-top: 2em;
+}
+
+#s1-services h1 {
+  text-align: right;
+  display: -ms-grid;
+  display: grid;
+  color: white;
+  font-size: 3em;
+  float: right;
+  padding-top: 2em;
+  padding-right: 2em;
+}
+
+#s1-services h1 span {
+  color: #00FFFF;
+}
+
+#s1-services h1 .line {
+  margin-top: 1em;
+  height: 1px;
+  width: 250px;
+  background-color: red;
+}
+
+#s1-services p {
+  width: 430px;
+  margin-top: 18em;
+  color: white;
+  text-align: right;
+  padding-right: 6em;
+  line-height: 20px;
+}
+
+#s1-services a {
+  text-decoration: none;
+  color: red;
+  font-size: 1em;
+}
+
+#s1-services a h3 {
+  text-transform: uppercase;
+  padding-top: 3em;
+  float: right;
+  padding-right: 5em;
+}
+
+#s1-services .top-content {
+  float: right;
+}
+
+#s2-services {
+  height: 90vh;
+}
+
+#s2-services .title {
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+#s2-services .title h1 {
+  font-size: 2em;
+}
+
+#s2-services .title .line {
+  display: block;
+  height: 1px;
+  width: 120px;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  margin-top: 3em;
+}
+
+#s2-services .content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+#s2-services .content p {
+  text-align: center;
+  width: 720px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding-top: 1em;
+  font-size: 1.1em;
+  line-height: 25px;
+  color: white;
+}
+
+#s2-services .content ul {
+  padding-top: 5em;
+  padding-bottom: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#s2-services .content ul .one {
+  padding-right: 4em;
+}
+
+#s2-services .content ul .three {
+  padding-left: 4em;
+}
+
+#s2-services .content ul li {
+  list-style: none;
+}
+
+#s2-services .content ul li img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  height: 45px;
+}
+
+#s2-services .content ul li p {
+  width: 200px;
+}
+
+#s2-services .content ul li .line-under {
+  padding-top: 2em;
+}
+
+#s2-services .content ul li .line-under .line {
+  height: 1px;
+  width: 120px;
+  background-color: #00FFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+#s2-services .content ul li .under {
+  padding-top: 2em;
+  width: 280px;
+  font-size: .8em;
+}
+
+#s3-services {
+  height: 220vh;
+}
+
+#s3-services .top {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  color: white;
+}
+
+#s3-services .top h1 {
+  font-size: 2em;
+}
+
+#s3-services .top .line {
+  height: 1px;
+  width: 120px;
+  background-color: red;
+  margin: auto;
+  margin-top: 3em;
+}
+
+#s3-services .content {
+  padding-top: 6em;
+}
+
+#s3-services .content .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#s3-services .content .item .text {
+  padding-left: 3em;
+  color: white;
+  padding-top: 3em;
+}
+
+#s3-services .content .item .text h1 {
+  color: #00FFFF;
+  font-size: 2em;
+}
+
+#s3-services .content .item .text p {
+  padding-top: 2em;
+  width: 300px;
+  line-height: 20px;
+}
+
+#s3-services .content .item .image img {
+  height: 300px;
+}
+
+#s3-services .content :nth-child(2) {
+  padding-top: 5em;
+  text-align: left;
+}
+
+#s3-services .content :nth-child(3) {
+  padding-top: 7em;
+  text-align: left;
+}
+
+#s1-contact {
+  height: 100px;
+}
+
+#s1-contact .title {
+  padding-top: 3em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#s1-contact .title h1 {
+  padding-top: 2em;
+  font-size: 3em;
+  color: white;
+}
+
+#s2-contact {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+}
+
+#s2-contact .main-panel {
+  background: white;
+  padding: 36px;
+  width: 480px;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+#s2-contact .main-panel form textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-top: 2em;
+  border: 1px solid lightgrey;
+  padding: 16px;
+  width: 300px;
+  outline: 0;
+  font-size: 18px;
+  resize: none;
+  height: 56px;
+  font-family: vcr;
+}
+
+#s2-contact .main-panel form button {
+  margin-left: 11em;
+  margin-top: 6em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+#s1-start {
+  height: 70vh;
+  padding-top: 2em;
+}
+
+#s1-start h1 {
+  padding-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  font-size: 3em;
+  color: white;
+}
+
+#s1-start h1 span {
+  padding-left: .5em;
+  padding-right: .5em;
+  color: #00FFFF;
+}
+
+#s1-start p {
+  padding-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  width: 400px;
+  text-align: center;
+  color: white;
+}
+
+#s1-start a {
+  text-decoration: none;
+  color: red;
+  font-size: 1.4em;
+}
+
+#s1-start a h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  text-transform: uppercase;
+  padding-top: 3em;
+}
+
+#s2-start {
+  height: 130vh;
+}
+
+#s2-start h1 {
+  padding-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  font-size: 2em;
+  color: #00FFFF;
+}
+
+#s2-start .line {
+  display: block;
+  height: 1px;
+  width: 120px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  margin-top: 3em;
+}
+
+#s2-start form {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+#s2-start form #first {
+  margin-bottom: 2em;
+}
+
+#s2-start form textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-top: 2em;
+  border: 1px solid lightgrey;
+  padding: 16px;
+  width: 300px;
+  outline: 0;
+  font-size: 18px;
+  resize: none;
+  height: 56px;
+  font-family: vcr;
+}
+
+#s2-start form .checkbox {
+  margin-top: 2em;
+  background-color: white;
+  width: 300px;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#s2-start form .checkbox input {
+  border-radius: 50px;
+  width: 15px;
+  height: 15px;
+}
+
+#s2-start form .checkbox label {
+  margin-left: 2em;
+  color: black;
+}
+
+#s2-start form button {
+  margin-left: 11em;
+  margin-top: 6em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+@media all and (max-width: 1024px) {
+  header {
+    padding-top: 2em;
+  }
+  .container nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-decoration: none;
+  }
+  .container nav a {
+    text-decoration: none;
+    color: black;
+  }
+  .container nav .left-side img {
+    height: 75px;
+    width: 75px;
+  }
+  .container nav .right-side ul {
+    list-style: none;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container nav .right-side ul li {
+    font-size: 1em;
+    overflow: hidden;
+    margin-left: 1.6em;
+  }
+  .container .headline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    width: 375px;
+    line-height: 1.6em;
+  }
+  .container .headline span {
+    letter-spacing: -0.5px;
+    font-family: italicc;
+    font-weight: 600;
+  }
+  .container .headline p {
+    padding-top: 3em;
+    font-size: 1.4em;
+    padding-bottom: 5em;
+    text-align: center;
+  }
+  .container .headline-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    background-color: #F2F2F2;
+    height: 50vh;
+    width: 100%;
+  }
+  .container .headline-image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .container .headline-two {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    width: 400px;
+    padding-top: 8em;
+  }
+  .container .headline-two p {
+    padding-top: 3em;
+    font-size: 2.5em;
+    padding-bottom: 3.2em;
+  }
+  .container .headline-two .headline-two-cta .arrow-right {
+    margin-left: 12px;
+    height: 8px;
+    width: 8px;
+  }
+  .container .headline-two .headline-two-cta a {
+    letter-spacing: -0.5px;
+    font-size: 1.2em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+  }
+  .container .headline-two .headline-two-cta h3 {
+    text-transform: uppercase;
+    color: black;
+    -webkit-transition: .6s;
+    transition: .6s;
+  }
+  .container .headline-two .headline-two-cta h3:hover {
+    margin-right: 15px;
+  }
+  .container footer .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    padding-bottom: 5em;
+  }
+  .container footer .links :nth-child(2) {
+    margin-left: 2em;
+  }
+  .container footer .links :nth-child(3) {
+    margin-left: 2em;
+  }
+  .container footer .links a {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+  }
+  .container footer .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  .container footer .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    -webkit-transform-origin: bottom right;
+            transform-origin: bottom right;
+    -webkit-transition: -webkit-transform 0.25s ease-out;
+    transition: -webkit-transform 0.25s ease-out;
+    transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+  }
+  .container footer .hover-underline-animation:hover:after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+  }
+  .headline-work {
+    padding: 4em;
+    padding-bottom: 10em;
+  }
+  .headline-work h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    font-size: 6em;
+    padding-bottom: 1.2em;
+    font-weight: 500;
+  }
+  .headline-work .project-container {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  .headline-work .project-container .first {
+    min-width: 100vw;
+    height: 500px;
+    background-color: black;
+  }
+  .headline-work .project-container .second {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .headline-work .project-container .second .one {
+    background-color: green;
+    height: 300px;
+    width: 50vw;
+  }
+  .headline-work .project-container .second .two {
+    background-color: yellow;
+    height: 200px;
+    width: 50vw;
+  }
+  .headline-contact {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    width: 390px;
+    padding-bottom: 12em;
+  }
+  .headline-contact .contents {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  .headline-contact .message {
+    padding-top: 2em;
+    font-size: 1.8em;
+    padding-bottom: 1.4em;
+  }
+  .headline-contact .email {
+    font-size: 1.5em;
+    display: block;
+  }
+  .headline-contact .email-button {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

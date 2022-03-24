@@ -1,5 +1,3 @@
-// index page and main css
-// ###############
 
 * { 
     box-sizing: border-box;
@@ -11,6 +9,37 @@ body {
     background-color: #000000;
     font-family: vcr;
     animation: flicker 1.2s;
+
+
+        // body on load flicker
+    // ################
+      
+    // @keyframes flicker { 
+
+    //   // 0% { 
+    //   //   opacity: 0;
+    //   // }
+
+    //   35% { 
+    //     opacity: .2;
+    //   }
+
+    //   40% { 
+    //     opacity: 0;
+    //   }
+
+    //   50% { 
+    //     opacity: .4;
+    //   }
+
+    //   60% { 
+    //     opacity: 0;
+    //   }
+
+    //   100% { 
+    //     opacity: 1;
+    //   }
+    // }
 }
 
 @font-face {
@@ -68,7 +97,6 @@ header {
 #s1 { 
     padding-left: 5em;
     padding-top: 6em;
-    padding-bottom: 15em;
 
     h1 { 
         text-transform: uppercase;
@@ -88,11 +116,206 @@ header {
             padding-right: 4em;
         }
     }
-   
+
+      // scroll down icon
+      // #################
+    .icon {
+      position: relative;
+      margin: 150px auto 0 auto;
+      
+      svg {
+        width: 30px;
+        margin: 10px auto;
+        padding-bottom: 2.5em;
+        .arrow {
+          animation: anim .35s ease-in alternate infinite;
+          
+          @keyframes anim {
+            0% {
+              transform: translateY(0);
+            }
+            100% {
+              transform: translateY(10px);
+            }
+          }
+        }
+      }
+    }
+
+
+
+      // main text glitch
+     // ################
+
+    .glitch{
+      font-weight: 800;
+      position: relative;
+      font-size: 100px;
+      padding: 30px;
+    }
+    .glitch::before, .glitch::after {
+      padding: 30px;
+      color: white;
+      content: "< You Des";
+      position: absolute;
+      background: black;
+      overflow: hidden;
+      top: 0;
+    }
+    .glitch::before {
+      left: 3px;
+      text-shadow: -2px 0 red;
+      animation-name: glitch-animation-1;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: reverse-alternate;
+    }
+    .glitch::after {
+      left: -3px;
+      text-shadow: -2px 0 blue;
+      animation-name: glitch-animation-2;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: reverse-alternate;
+    }
+
+    @keyframes glitch-animation-1 {
+      0% {
+        clip: rect(149px, 350px, 144px, 30px);
+      }
+      5% {
+        clip: rect(23px, 350px, 9px, 30px);
+      }
+      10% {
+        clip: rect(43px, 350px, 132px, 30px);
+      }
+      15% {
+        clip: rect(57px, 350px, 77px, 30px);
+      }
+      20% {
+        clip: rect(114px, 350px, 147px, 30px);
+      }
+      25% {
+        clip: rect(33px, 350px, 45px, 30px);
+      }
+      30% {
+        clip: rect(93px, 350px, 42px, 30px);
+      }
+      35% {
+        clip: rect(42px, 350px, 53px, 30px);
+      }
+      40% {
+        clip: rect(91px, 350px, 101px, 30px);
+      }
+      45% {
+        clip: rect(115px, 350px, 23px, 30px);
+      }
+      50% {
+        clip: rect(36px, 350px, 31px, 30px);
+      }
+      55% {
+        clip: rect(38px, 350px, 133px, 30px);
+      }
+      60% {
+        clip: rect(56px, 350px, 4px, 30px);
+      }
+      65% {
+        clip: rect(41px, 350px, 116px, 30px);
+      }
+      70% {
+        clip: rect(86px, 350px, 17px, 30px);
+      }
+      75% {
+        clip: rect(100px, 350px, 138px, 30px);
+      }
+      80% {
+        clip: rect(116px, 350px, 42px, 30px);
+      }
+      85% {
+        clip: rect(37px, 350px, 138px, 30px);
+      }
+      90% {
+        clip: rect(54px, 350px, 70px, 30px);
+      }
+      95% {
+        clip: rect(18px, 350px, 123px, 30px);
+      }
+      100% {
+        clip: rect(141px, 350px, 4px, 30px);
+      }
+    }
+    @keyframes glitch-animation-2 {
+      0% {
+        clip: rect(93px, 350px, 96px, 30px);
+      }
+      5% {
+        clip: rect(86px, 350px, 103px, 30px);
+      }
+      10% {
+        clip: rect(47px, 350px, 53px, 30px);
+      }
+      15% {
+        clip: rect(36px, 350px, 130px, 30px);
+      }
+      20% {
+        clip: rect(115px, 350px, 57px, 30px);
+      }
+      25% {
+        clip: rect(35px, 350px, 61px, 30px);
+      }
+      30% {
+        clip: rect(20px, 350px, 136px, 30px);
+      }
+      35% {
+        clip: rect(90px, 350px, 102px, 30px);
+      }
+      40% {
+        clip: rect(64px, 350px, 33px, 30px);
+      }
+      45% {
+        clip: rect(57px, 350px, 123px, 30px);
+      }
+      50% {
+        clip: rect(129px, 350px, 103px, 30px);
+      }
+      55% {
+        clip: rect(85px, 350px, 90px, 30px);
+      }
+      60% {
+        clip: rect(62px, 350px, 64px, 30px);
+      }
+      65% {
+        clip: rect(108px, 350px, 46px, 30px);
+      }
+      70% {
+        clip: rect(97px, 350px, 86px, 30px);
+      }
+      75% {
+        clip: rect(81px, 350px, 65px, 30px);
+      }
+      80% {
+        clip: rect(15px, 350px, 132px, 30px);
+      }
+      85% {
+        clip: rect(99px, 350px, 25px, 30px);
+      }
+      90% {
+        clip: rect(76px, 350px, 80px, 30px);
+      }
+      95% {
+        clip: rect(50px, 350px, 94px, 30px);
+      }
+      100% {
+        clip: rect(77px, 350px, 136px, 30px);
+      }
+    }
 }
 
 #s2 { 
-  padding-top: 10em;
     width: 100%;
     height: 100vh;
     color: white;
@@ -150,7 +373,7 @@ header {
 }
 
 #s3 {  
-  margin-top: 15em; 
+  margin-top: 5em; 
   width: 100vw;
   height: 300px;
   background-image: url(../assets/s3.png);
@@ -166,16 +389,19 @@ header {
 
 #s4 { 
   overflow: hidden;
-  margin-top: 15em; 
+  margin-top: 14em; 
   color: white;
   height: 200vh;
 
   li { 
     list-style: none;
+    filter: saturate(0);
+    opacity: .8;
   }
 
   li:hover { 
-    opacity: .7;
+    filter: saturate(1);
+    opacity: 1;
   }
 
   h3 { 
@@ -237,9 +463,8 @@ header {
 }
 
 footer { 
-
   height: 200px;
-  background-color: rgba(15, 15, 15, 0.473);
+  background-color: rgba(30, 30, 30, 0.473);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -284,44 +509,8 @@ footer {
   
 }
 
-// body on load flicker
-// ################
-  
-// @keyframes flicker { 
 
-//   // 0% { 
-//   //   opacity: 0;
-//   // }
-
-//   35% { 
-//     opacity: .2;
-//   }
-
-//   40% { 
-//     opacity: 0;
-//   }
-
-//   50% { 
-//     opacity: .4;
-//   }
-
-//   60% { 
-//     opacity: 0;
-//   }
-
-//   100% { 
-//     opacity: 1;
-//   }
-// }
-
-
-
-
-
-
-
-
-// vcr screen and blinking button css
+// transition screen and blinking button css
 // ################
 
 button {
@@ -337,7 +526,6 @@ button {
   align-items: center;
  
 }
-
 .screen {
   z-index: -1;
   top: 50%;
@@ -356,193 +544,22 @@ button {
   overflow-x:hidden;
  
 }
-
 @keyframes blink {
   50% {
     opacity: 0.0;
   }
 }
-
 .blink {
   animation: blink 1.2s step-start 0s infinite;
 }
 
 
-// main text glitch
-// ################
 
-.glitch{
-    font-weight: 800;
-    position: relative;
-    font-size: 100px;
-    padding: 30px;
-  }
-  .glitch::before, .glitch::after {
-    padding: 30px;
-    color: white;
-    content: "< You Des";
-    position: absolute;
-    background: black;
-    overflow: hidden;
-    top: 0;
-  }
-  .glitch::before {
-    left: 3px;
-    text-shadow: -2px 0 red;
-    animation-name: glitch-animation-1;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: reverse-alternate;
-  }
-.glitch::after {
-    left: -3px;
-    text-shadow: -2px 0 blue;
-    animation-name: glitch-animation-2;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: reverse-alternate;
-  }
-  
-  @keyframes glitch-animation-1 {
-    0% {
-      clip: rect(149px, 350px, 144px, 30px);
-    }
-    5% {
-      clip: rect(23px, 350px, 9px, 30px);
-    }
-    10% {
-      clip: rect(43px, 350px, 132px, 30px);
-    }
-    15% {
-      clip: rect(57px, 350px, 77px, 30px);
-    }
-    20% {
-      clip: rect(114px, 350px, 147px, 30px);
-    }
-    25% {
-      clip: rect(33px, 350px, 45px, 30px);
-    }
-    30% {
-      clip: rect(93px, 350px, 42px, 30px);
-    }
-    35% {
-      clip: rect(42px, 350px, 53px, 30px);
-    }
-    40% {
-      clip: rect(91px, 350px, 101px, 30px);
-    }
-    45% {
-      clip: rect(115px, 350px, 23px, 30px);
-    }
-    50% {
-      clip: rect(36px, 350px, 31px, 30px);
-    }
-    55% {
-      clip: rect(38px, 350px, 133px, 30px);
-    }
-    60% {
-      clip: rect(56px, 350px, 4px, 30px);
-    }
-    65% {
-      clip: rect(41px, 350px, 116px, 30px);
-    }
-    70% {
-      clip: rect(86px, 350px, 17px, 30px);
-    }
-    75% {
-      clip: rect(100px, 350px, 138px, 30px);
-    }
-    80% {
-      clip: rect(116px, 350px, 42px, 30px);
-    }
-    85% {
-      clip: rect(37px, 350px, 138px, 30px);
-    }
-    90% {
-      clip: rect(54px, 350px, 70px, 30px);
-    }
-    95% {
-      clip: rect(18px, 350px, 123px, 30px);
-    }
-    100% {
-      clip: rect(141px, 350px, 4px, 30px);
-    }
-  }
-  @keyframes glitch-animation-2 {
-    0% {
-      clip: rect(93px, 350px, 96px, 30px);
-    }
-    5% {
-      clip: rect(86px, 350px, 103px, 30px);
-    }
-    10% {
-      clip: rect(47px, 350px, 53px, 30px);
-    }
-    15% {
-      clip: rect(36px, 350px, 130px, 30px);
-    }
-    20% {
-      clip: rect(115px, 350px, 57px, 30px);
-    }
-    25% {
-      clip: rect(35px, 350px, 61px, 30px);
-    }
-    30% {
-      clip: rect(20px, 350px, 136px, 30px);
-    }
-    35% {
-      clip: rect(90px, 350px, 102px, 30px);
-    }
-    40% {
-      clip: rect(64px, 350px, 33px, 30px);
-    }
-    45% {
-      clip: rect(57px, 350px, 123px, 30px);
-    }
-    50% {
-      clip: rect(129px, 350px, 103px, 30px);
-    }
-    55% {
-      clip: rect(85px, 350px, 90px, 30px);
-    }
-    60% {
-      clip: rect(62px, 350px, 64px, 30px);
-    }
-    65% {
-      clip: rect(108px, 350px, 46px, 30px);
-    }
-    70% {
-      clip: rect(97px, 350px, 86px, 30px);
-    }
-    75% {
-      clip: rect(81px, 350px, 65px, 30px);
-    }
-    80% {
-      clip: rect(15px, 350px, 132px, 30px);
-    }
-    85% {
-      clip: rect(99px, 350px, 25px, 30px);
-    }
-    90% {
-      clip: rect(76px, 350px, 80px, 30px);
-    }
-    95% {
-      clip: rect(50px, 350px, 94px, 30px);
-    }
-    100% {
-      clip: rect(77px, 350px, 136px, 30px);
-    }
-  }
-
-  // ABOUT PAGE
-  // #################
+// ABOUT PAGE
+// #################
 
   #s1-about { 
-    height: 100vh;
+    height: 55vh;
     
     .main-text-about { 
       padding-top: 3em;
@@ -552,4 +569,863 @@ button {
       color: white;
     }
 
+    .line { 
+      display: block;
+      height: 1px;
+      width: 120px;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+
+      margin-top: 3em;
+    }
+  }
+
+  #s2-about { 
+    height: 70vh;
+    overflow: hidden;
+
+    .s2-container { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+      .side-one { 
+        .row-one { 
+          .one { 
+            img { 
+              height: 300px;
+            }
+          }
+        }
+      }
+
+      .side-two { 
+        padding-left: 5em;
+        .two { 
+          p { 
+            width: 400px;
+            color: white;
+            text-align: left;
+            font-size: 1.2em;
+            line-height: 22px;
+          }
+          .line { 
+              height: 1px;
+              width: 120px;
+              background-color: white;
+              margin-top: 3em;
+          }
+
+          a { 
+            text-decoration: none;
+            color: red;
+            h3 { 
+                text-transform: uppercase;
+                padding-top: 3em;
+                padding-right: 4em;
+            }
+        }
+
+        } 
+      }
+    }
+  }
+
+  #s3-about { 
+    height: 350vh;
+    color: white;
+
+    .top-part { 
+      display: grid;
+      justify-content: center;
+      margin: auto;
+
+      .s3-about-title { 
+        color: #00FFFF;
+        font-size: 2em;
+      }
+  
+      .line { 
+        margin: auto;
+        height: 1px;
+        width: 120px;
+        background-color: white;
+        margin-top: 3em;
+      }
+    }
+
+    .us { 
+      padding-top: 3em;
+      display: grid;
+      justify-content: center;
+      margin: auto;
+
+      .julija {
+        padding-top: 5em;
+        display: flex;
+        align-items: center;
+        .photo { 
+          img { 
+            height: 450px;
+          }
+        }
+
+        .text { 
+          padding-left: 8em;
+          span { 
+            color: red;
+          }
+          .line { 
+            height: 1px;
+            width: 220px;
+            background-color: white;
+            margin-top: 1em;
+          }
+          h2 { 
+            padding-top: 1.6em;
+            color: #00FFFF;
+          }
+          p { 
+            padding-top: 1.4em;
+            width: 400px;
+            line-height: 30px;
+          }
+        }
+      }
+
+      .nicky {
+        padding-top: 5em;
+        display: flex;
+        align-items: center;
+        .photo { 
+          img { 
+            height: 450px;
+          }
+        }
+
+        .text { 
+          text-align: right;
+          padding-right: 8em;
+
+          span { 
+            color: red;
+          }
+          .line { 
+            height: 1px;
+            width: 220px;
+            background-color: white;
+            margin-top: 1em;
+            float: right;
+          }
+          h2 { 
+            padding-top: 1.6em;
+            color: #00FFFF;
+          }
+          p { 
+            padding-top: 1.4em;
+            width: 400px;
+            line-height: 30px;
+          }
+        }
+      }
+
+      .ralfs {
+        padding-top: 5em;
+        display: flex;
+        align-items: center;
+        .photo { 
+          img { 
+            height: 450px;
+          }
+        }
+
+        .text { 
+          padding-left: 8em;
+          span { 
+            color: red;
+          }
+          .line { 
+            height: 1px;
+            width: 220px;
+            background-color: white;
+            margin-top: 1em;
+          }
+          h2 { 
+            padding-top: 1.6em;
+            color: #00FFFF;
+          }
+          p { 
+            padding-top: 1.4em;
+            width: 400px;
+            line-height: 30px;
+          }
+        }
+      }
+
+      .philip {
+        padding-top: 5em;
+        display: flex;
+        align-items: center;
+        .photo { 
+          img { 
+            height: 450px;
+          }
+        }
+
+        .text { 
+          text-align: right;
+          padding-right: 8em;
+
+          span { 
+            color: red;
+          }
+          .line { 
+            height: 1px;
+            width: 220px;
+            background-color: white;
+            margin-top: 1em;
+            float: right;
+          }
+          h2 { 
+            padding-top: 1.6em;
+            color: #00FFFF;
+          }
+          p { 
+            padding-top: 1.4em;
+            width: 400px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+
+  }
+
+
+
+
+
+  // SERVICES PAGE
+// #################
+
+#s1-services { 
+  height: 90vh;
+  padding-top: 2em;
+
+  h1 { 
+    text-align: right;
+    display: grid;
+    color: white;
+    font-size: 3em;
+    float: right;
+    padding-top: 2em;
+    padding-right: 2em;
+    span { 
+      color: #00FFFF;
+    }
+    
+    .line { 
+      margin-top: 1em;
+      height: 1px;
+      width: 250px;
+      background-color: red;
+    }
+  }
+  p { 
+    width: 430px;
+    margin-top: 18em;
+    color: white;
+    text-align: right;
+    padding-right: 6em;
+    line-height: 20px;
+  }
+
+  a { 
+    text-decoration: none;
+    color: red;
+    font-size: 1em;
+    h3 { 
+        text-transform: uppercase;
+        padding-top: 3em;
+        float: right;
+        padding-right: 5em;
+    }
+  }
+
+  .top-content { 
+    float: right;
+  }
+
+}
+
+
+#s2-services { 
+  height: 90vh;
+
+  .title { 
+    color: white;
+    display: grid;
+    justify-content: center;
+    margin: auto;
+
+    h1  { 
+      font-size: 2em;
+    }
+
+    .line { 
+      display: block;
+      height: 1px;
+      width: 120px;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+
+      margin-top: 3em;
+    }
+
+  }
+
+  .content { 
+    justify-content: center;
+    display: flex;
+    margin: auto;
+
+    p { 
+      text-align: center;
+      width: 720px;
+      justify-content: center;
+      margin: auto;
+      padding-top: 1em;
+      font-size: 1.1em;
+      line-height: 25px;
+      color: white;
+    }
+    ul {
+      padding-top: 5em;
+      padding-bottom: 10em;
+      display: flex;
+      justify-content: center;
+
+      .one { 
+        padding-right: 4em;
+      }
+
+      .three { 
+        padding-left: 4em;
+      }
+
+      li { 
+        list-style: none;
+
+        img { 
+          display: flex;
+          justify-content: center;
+          margin: auto;
+          height: 45px;
+        }
+        p { 
+          width: 200px;
+        }
+
+        .line-under  { 
+          padding-top: 2em;
+          .line { 
+            height: 1px;
+            width: 120px;
+            background-color: #00FFFF;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+          }
+        }
+      
+        .under { 
+          padding-top: 2em;
+          width: 280px;
+          font-size: .8em;
+        }
+      }
+    }
+  }
+
+
+}
+
+#s3-services { 
+  height: 220vh;
+
+  .top { 
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    color: white;
+
+    h1 { 
+      font-size: 2em;
+    }
+
+    .line { 
+      height: 1px;
+      width: 120px;
+      background-color: red;
+      margin: auto;
+      margin-top: 3em;
+    }
+  }
+
+  .content { 
+    padding-top: 6em;
+    .item { 
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      align-items: center;
+
+      .text { 
+        padding-left: 3em;
+        color: white;
+        padding-top: 3em;
+        h1 { 
+          color: #00FFFF;
+          font-size: 2em;
+        }
+        p { 
+          padding-top: 2em;
+          width: 300px;
+          line-height: 20px;
+        }
+      }
+      .image img { 
+        height: 300px;
+      }
+    }
+    :nth-child(2) {
+      padding-top: 5em;
+      text-align: left;
+    }
+    :nth-child(3) {
+      padding-top: 7em;
+      text-align: left;
+    }
+   }
+
+}
+
+
+  // CONTACT PAGE
+// #################
+
+#s1-contact { 
+  height: 100px;
+
+  .title {
+    padding-top: 3em;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    h1 { 
+      padding-top: 2em; 
+      font-size: 3em;
+      color: white;
+    }
+  }
+}
+
+#s2-contact { 
+
+  height: 100vh;
+  display: grid;
+
+
+  .main-panel {
+    background: white;
+    padding: 36px;
+    width: 480px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    
+    form { 
+      textarea {
+        display: flex;
+        text-align: center;
+        margin-top: 2em;
+        border: 1px solid lightgrey;
+        padding: 16px;
+        width: 300px;
+        outline: 0;
+        font-size: 18px;
+        resize: none;
+        height: 56px;
+        font-family: vcr;
+      }
+
+      button { 
+        margin-left: 11em;
+        margin-top: 6em;
+        justify-content: center;
+        position: relative;
+
+      }
+
+    }
+  }
+
+
+}
+
+  // START A PROJECT PAGE
+// #################
+
+#s1-start { 
+  height: 70vh;
+  padding-top: 2em;
+
+  h1{
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 3em;
+    color: white;
+    span { 
+      padding-left: .5em;
+      padding-right: .5em;
+      color: #00FFFF;
+    }
+  }
+
+  p { 
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    color: white;
+  }
+
+  a { 
+    text-decoration: none;
+    color: red;
+    font-size: 1.4em;
+    h3 { 
+      display: flex;
+      justify-content: center;
+      margin: auto;
+        text-transform: uppercase;
+        padding-top: 3em;
+    }
+  }
+
+}
+
+#s2-start { 
+  height: 130vh;
+  h1{
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 2em;
+    color: #00FFFF;
+  }
+
+  .line { 
+    display: block;
+    height: 1px;
+    width: 120px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3em;
+  }
+
+  form { 
+    display: grid;
+    justify-content: center;
+    margin: auto;
+
+    #first { 
+      margin-bottom: 2em;
+    }
+    textarea {
+      display: flex;
+      text-align: center;
+      margin-top: 2em;
+      border: 1px solid lightgrey;
+      padding: 16px;
+      width: 300px;
+      outline: 0;
+      font-size: 18px;
+      resize: none;
+      height: 56px;
+      font-family: vcr;
+    }
+
+    .checkbox { 
+      margin-top: 2em;
+      background-color: white;
+      width: 300px;
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+
+      align-items: center;
+
+      input { 
+        border-radius: 50px;
+        width: 15px;
+        height: 15px;
+      }
+      label {
+        margin-left: 2em;
+        color: black;
+      }
+    }
+   
+
+    button { 
+      margin-left: 11em;
+      margin-top: 6em;
+      justify-content: center;
+      position: relative;
+    }
+  }
+
+
+
+}
+
+
+
+  @media all and (max-width : 1024px) { 
+
+      header { 
+          padding-top: 2em;
+      }
+
+      .container { 
+          nav { 
+              align-items: center;
+              display: flex;
+              justify-content: space-between;
+                  a { 
+                      text-decoration: none;
+                      color: black;
+                  }
+              text-decoration: none;
+
+              .left-side { 
+
+                  img { 
+                      height: 75px;
+                      width: 75px;
+                  }
+              }
+              .right-side { 
+                  
+                  ul { 
+                      list-style: none;
+                      text-decoration: none;
+                      display: flex;
+
+                      li { 
+                          font-size: 1em;
+                          overflow: hidden;
+                          margin-left: 1.6em;
+                      }
+                  }
+              }
+          }
+
+          .headline { 
+              display: flex;
+              justify-content: center;
+              margin: auto;
+              width: 375px;
+              line-height: 1.6em;
+
+          
+              span { 
+                  letter-spacing: -0.5px;
+                  font-family: italicc;
+                  font-weight: 600;
+              }
+          
+              p { 
+                  padding-top: 3em;
+                  font-size: 1.4em;
+                  padding-bottom: 5em;
+                  text-align: center;
+              }
+          }
+
+          .headline-image { 
+              display: flex;
+              justify-content: center;
+              margin: auto;
+              background-color: #F2F2F2;
+              height: 50vh;
+              width: 100%;
+          
+              img { 
+                  object-fit: cover;
+              }
+          
+          }
+
+          .headline-two { 
+              justify-content: center;
+              margin: auto;
+              width: 400px;
+              padding-top: 8em;
+          
+              p { 
+                  padding-top: 3em;
+                  font-size: 2.5em;
+                  padding-bottom: 3.2em;
+              }
+          
+              .headline-two-cta {
+                  .arrow-right { 
+                      margin-left: 12px;
+                      height: 8px;
+                      width: 8px;
+                  }
+          
+                  a {
+                      letter-spacing: -0.5px;
+                      font-size: 1.2em; 
+                      justify-content: center;
+                      align-items: center;
+                      display: flex;
+                      text-decoration: none;
+                  }
+                  h3 { 
+                      text-transform: uppercase;
+                      color: black;
+                      transition: .6s;
+                  }
+                  h3:hover {
+                      margin-right: 15px;
+                  }
+              }
+          }
+
+          footer { 
+              .links { 
+                  display: flex;
+                  justify-content: center;
+                  margin: auto;
+                  padding-bottom: 5em;
+
+                  :nth-child(2) {
+                      margin-left: 2em;
+                  }
+                  :nth-child(3) {
+                      margin-left: 2em;
+                  }
+                  a { 
+                      font-size: 0.8em;
+                      color: black;
+                      text-decoration: none;
+                  }
+              }
+
+              .hover-underline-animation {
+                  display: inline-block;
+                  position: relative;
+              }
+              .hover-underline-animation:after {
+                  content: '';
+                  position: absolute;
+                  width: 100%;
+                  transform: scaleX(0);
+                  height: 1px;
+                  bottom: 0;
+                  left: 0;
+                  background-color: #000000;
+                  transform-origin: bottom right;
+                  transition: transform 0.25s ease-out;
+              }
+              .hover-underline-animation:hover:after {
+                  transform: scaleX(1);
+                  transform-origin: bottom left;
+              }
+              
+          }
+      }
+      // work page
+      .headline-work {
+          padding: 4em;
+          padding-bottom: 10em;
+      
+          h1 { 
+              display: flex;
+              justify-content: center;
+              margin: auto;
+              font-size: 6em;
+              padding-bottom: 1.2em;
+              font-weight: 500;
+          }
+      
+          .project-container { 
+              display: grid;
+              justify-content: center;
+              margin: auto;
+              .first { 
+                  min-width: 100vw;
+                  height: 500px;
+                  background-color: black;
+              }
+              .second { 
+                  display: flex;
+                  .one { 
+                      background-color: green;
+                      height: 300px;
+                      width: 50vw;
+                  }
+                  .two { 
+                      background-color: yellow;
+                      height: 200px;
+                      width: 50vw;
+                  }
+              }
+          }
+      } 
+      // contact page
+      .headline-contact { 
+          justify-content: center;
+          margin: auto;
+          width: 390px;
+          padding-bottom: 12em;
+      
+          .contents { 
+              display: block;
+              justify-content: center;
+              margin: auto;
+          }
+      
+          .message{ 
+              padding-top: 2em;
+              font-size: 1.8em;
+              padding-bottom: 1.4em;
+          }
+      
+          .email { 
+              font-size: 1.5em;
+              display: block;
+          }
+          .email-button { 
+           display: none;
+          }
+      }
   }

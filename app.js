@@ -1,6 +1,5 @@
 // on / off screen
 // ###############
-
 (function() {
 
   var SELECTOR_SCREEN_ELEMENT = '.screen';
@@ -45,14 +44,16 @@
   });
 })();
 
+
+
 // vcr audio
 // ###############
-
-
 function play() {
   var audio = document.getElementById("audio");
   audio.preload = 'auto';
   audio.play();
 }
+
+
 
 
