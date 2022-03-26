@@ -53,7 +53,3 @@ function play() {
   audio.preload = 'auto';
   audio.play();
 }
-
-
-
-

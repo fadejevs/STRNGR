@@ -10,6 +10,47 @@ body {
   font-family: vcr;
   -webkit-animation: flicker 1.2s;
           animation: flicker 1.2s;
+  letter-spacing: .8px;
+}
+
+body video::-webkit-media-controls {
+  display: none;
+}
+
+@-webkit-keyframes flicker {
+  35% {
+    opacity: .2;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .4;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flicker {
+  35% {
+    opacity: .2;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .4;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @font-face {
@@ -480,7 +521,7 @@ header nav .right ul a {
 
 #s2 p {
   text-align: center;
-  width: 720px;
+  width: 700px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -491,7 +532,7 @@ header nav .right ul a {
 }
 
 #s2 ul {
-  padding-top: 12em;
+  padding-top: 8em;
   padding-bottom: 10em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -540,7 +581,7 @@ header nav .right ul a {
 
 #s4 {
   overflow: hidden;
-  margin-top: 14em;
+  margin-top: 10em;
   color: white;
   height: 200vh;
 }
@@ -606,7 +647,7 @@ header nav .right ul a {
   height: 350px;
   width: 300px;
   background-color: gray;
-  background-image: url(../assets/s4-two.png);
+  background-image: url(../assets/s4-three.png);
   cursor: pointer;
 }
 
@@ -615,7 +656,7 @@ header nav .right ul a {
   height: 500px;
   width: 300px;
   background-color: gray;
-  background-image: url(../assets/s4-one.png);
+  background-image: url(../assets/s4-four.png);
   cursor: pointer;
 }
 
@@ -658,7 +699,7 @@ footer ul h3 {
 footer ul li {
   text-transform: uppercase;
   margin-top: 6px;
-  font-size: .6em;
+  font-size: .7em;
   list-style: none;
   cursor: pointer;
 }
@@ -774,6 +815,8 @@ button {
 }
 
 #s2-about .s2-container .side-one .row-one .one img {
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
   height: 300px;
 }
 
@@ -835,7 +878,6 @@ button {
 }
 
 #s3-about .us {
-  padding-top: 3em;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -1009,11 +1051,26 @@ button {
 }
 
 #s1-services {
-  height: 90vh;
+  height: 100vh;
   padding-top: 2em;
 }
 
-#s1-services h1 {
+#s1-services .top-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+#s1-services .left-side {
+  padding-top: 3em;
+  margin-right: 5em;
+}
+
+#s1-services .right-side h1 {
   text-align: right;
   display: -ms-grid;
   display: grid;
@@ -1021,48 +1078,41 @@ button {
   font-size: 3em;
   float: right;
   padding-top: 2em;
-  padding-right: 2em;
 }
 
-#s1-services h1 span {
+#s1-services .right-side h1 span {
   color: #00FFFF;
 }
 
-#s1-services h1 .line {
+#s1-services .right-side h1 .line {
   margin-top: 1em;
   height: 1px;
   width: 250px;
   background-color: red;
 }
 
-#s1-services p {
+#s1-services .right-side p {
   width: 430px;
   margin-top: 18em;
   color: white;
   text-align: right;
-  padding-right: 6em;
   line-height: 20px;
 }
 
-#s1-services a {
+#s1-services .right-side a {
   text-decoration: none;
   color: red;
   font-size: 1em;
 }
 
-#s1-services a h3 {
+#s1-services .right-side a h3 {
   text-transform: uppercase;
   padding-top: 3em;
-  float: right;
-  padding-right: 5em;
-}
-
-#s1-services .top-content {
   float: right;
 }
 
 #s2-services {
-  height: 90vh;
+  height: 85vh;
 }
 
 #s2-services .title {
@@ -1179,7 +1229,7 @@ button {
 }
 
 #s3-services {
-  height: 220vh;
+  height: 230vh;
 }
 
 #s3-services .top {
@@ -1205,7 +1255,11 @@ button {
 }
 
 #s3-services .content {
-  padding-top: 6em;
+  padding-top: 9em;
+}
+
+#s3-services .content #two p {
+  width: 290px;
 }
 
 #s3-services .content .item {
@@ -1243,13 +1297,21 @@ button {
 }
 
 #s3-services .content :nth-child(2) {
-  padding-top: 5em;
-  text-align: left;
+  padding-top: 6em;
 }
 
 #s3-services .content :nth-child(3) {
-  padding-top: 7em;
+  padding-top: 9em;
   text-align: left;
+}
+
+#s3-services .content .item-two {
+  text-align: right;
+}
+
+#s3-services .content .item-two .text {
+  padding-left: 0;
+  padding-right: 3em;
 }
 
 #s1-contact {
@@ -1277,6 +1339,10 @@ button {
   height: 100vh;
   display: -ms-grid;
   display: grid;
+}
+
+#s2-contact h1 {
+  color: black;
 }
 
 #s2-contact .main-panel {
@@ -1471,65 +1537,432 @@ button {
   position: relative;
 }
 
-@media all and (max-width: 1024px) {
-  header {
-    padding-top: 2em;
+@media all and (max-width: 600px) {
+  button {
+    display: none;
   }
-  .container nav {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  header {
+    padding-top: 4em;
+    padding-left: 3em;
+  }
+  header nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    text-decoration: none;
   }
-  .container nav a {
-    text-decoration: none;
-    color: black;
-  }
-  .container nav .left-side img {
-    height: 75px;
-    width: 75px;
-  }
-  .container nav .right-side ul {
+  header nav li {
+    margin-right: 1em;
+    color: white;
     list-style: none;
-    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .6em;
+  }
+  header nav .left img {
+    height: 30px;
+    width: 90px;
+  }
+  header nav .right ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .container nav .right-side ul li {
-    font-size: 1em;
-    overflow: hidden;
-    margin-left: 1.6em;
-  }
-  .container .headline {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: auto;
-    width: 375px;
-    line-height: 1.6em;
-  }
-  .container .headline span {
-    letter-spacing: -0.5px;
-    font-family: italicc;
-    font-weight: 600;
-  }
-  .container .headline p {
-    padding-top: 3em;
-    font-size: 1.4em;
-    padding-bottom: 5em;
+  header nav .right ul li {
+    width: 80px;
+    height: 30px;
     text-align: center;
   }
-  .container .headline-image {
+  header nav .right ul a {
+    text-decoration: none;
+  }
+  #s1 {
+    padding-left: .8em;
+    padding-top: 6em;
+  }
+  #s1 h1 {
+    text-transform: uppercase;
+    font-size: 1em;
+    color: white;
+    width: 400px;
+  }
+  #s1 a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-decoration: none;
+    color: red;
+    font-size: 1em;
+  }
+  #s1 a h3 {
+    text-transform: uppercase;
+    padding-top: 3em;
+  }
+  #s1 .icon {
+    position: relative;
+    margin: 100px auto 0 auto;
+  }
+  #s1 .icon svg {
+    width: 30px;
+    margin: 10px auto;
+    padding-bottom: 2.5em;
+  }
+  #s1 .icon svg .arrow {
+    -webkit-animation: anim .35s ease-in alternate infinite;
+            animation: anim .35s ease-in alternate infinite;
+  }
+  @-webkit-keyframes anim {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px);
+    }
+  }
+  @keyframes anim {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px);
+    }
+  }
+  #s1 .glitch {
+    font-weight: 800;
+    position: relative;
+    font-size: 100px;
+    padding: 30px;
+  }
+  #s1 .glitch::before, #s1 .glitch::after {
+    padding: 30px;
+    color: white;
+    content: "< You Des";
+    position: absolute;
+    background: black;
+    overflow: hidden;
+    top: 0;
+  }
+  #s1 .glitch::before {
+    left: 3px;
+    text-shadow: -2px 0 red;
+    -webkit-animation-name: glitch-animation-1;
+            animation-name: glitch-animation-1;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: reverse-alternate;
+            animation-direction: reverse-alternate;
+  }
+  #s1 .glitch::after {
+    left: -3px;
+    text-shadow: -2px 0 blue;
+    -webkit-animation-name: glitch-animation-2;
+            animation-name: glitch-animation-2;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: reverse-alternate;
+            animation-direction: reverse-alternate;
+  }
+  @-webkit-keyframes glitch-animation-1 {
+    0% {
+      clip: rect(149px, 350px, 144px, 30px);
+    }
+    5% {
+      clip: rect(23px, 350px, 9px, 30px);
+    }
+    10% {
+      clip: rect(43px, 350px, 132px, 30px);
+    }
+    15% {
+      clip: rect(57px, 350px, 77px, 30px);
+    }
+    20% {
+      clip: rect(114px, 350px, 147px, 30px);
+    }
+    25% {
+      clip: rect(33px, 350px, 45px, 30px);
+    }
+    30% {
+      clip: rect(93px, 350px, 42px, 30px);
+    }
+    35% {
+      clip: rect(42px, 350px, 53px, 30px);
+    }
+    40% {
+      clip: rect(91px, 350px, 101px, 30px);
+    }
+    45% {
+      clip: rect(115px, 350px, 23px, 30px);
+    }
+    50% {
+      clip: rect(36px, 350px, 31px, 30px);
+    }
+    55% {
+      clip: rect(38px, 350px, 133px, 30px);
+    }
+    60% {
+      clip: rect(56px, 350px, 4px, 30px);
+    }
+    65% {
+      clip: rect(41px, 350px, 116px, 30px);
+    }
+    70% {
+      clip: rect(86px, 350px, 17px, 30px);
+    }
+    75% {
+      clip: rect(100px, 350px, 138px, 30px);
+    }
+    80% {
+      clip: rect(116px, 350px, 42px, 30px);
+    }
+    85% {
+      clip: rect(37px, 350px, 138px, 30px);
+    }
+    90% {
+      clip: rect(54px, 350px, 70px, 30px);
+    }
+    95% {
+      clip: rect(18px, 350px, 123px, 30px);
+    }
+    100% {
+      clip: rect(141px, 350px, 4px, 30px);
+    }
+  }
+  @keyframes glitch-animation-1 {
+    0% {
+      clip: rect(149px, 350px, 144px, 30px);
+    }
+    5% {
+      clip: rect(23px, 350px, 9px, 30px);
+    }
+    10% {
+      clip: rect(43px, 350px, 132px, 30px);
+    }
+    15% {
+      clip: rect(57px, 350px, 77px, 30px);
+    }
+    20% {
+      clip: rect(114px, 350px, 147px, 30px);
+    }
+    25% {
+      clip: rect(33px, 350px, 45px, 30px);
+    }
+    30% {
+      clip: rect(93px, 350px, 42px, 30px);
+    }
+    35% {
+      clip: rect(42px, 350px, 53px, 30px);
+    }
+    40% {
+      clip: rect(91px, 350px, 101px, 30px);
+    }
+    45% {
+      clip: rect(115px, 350px, 23px, 30px);
+    }
+    50% {
+      clip: rect(36px, 350px, 31px, 30px);
+    }
+    55% {
+      clip: rect(38px, 350px, 133px, 30px);
+    }
+    60% {
+      clip: rect(56px, 350px, 4px, 30px);
+    }
+    65% {
+      clip: rect(41px, 350px, 116px, 30px);
+    }
+    70% {
+      clip: rect(86px, 350px, 17px, 30px);
+    }
+    75% {
+      clip: rect(100px, 350px, 138px, 30px);
+    }
+    80% {
+      clip: rect(116px, 350px, 42px, 30px);
+    }
+    85% {
+      clip: rect(37px, 350px, 138px, 30px);
+    }
+    90% {
+      clip: rect(54px, 350px, 70px, 30px);
+    }
+    95% {
+      clip: rect(18px, 350px, 123px, 30px);
+    }
+    100% {
+      clip: rect(141px, 350px, 4px, 30px);
+    }
+  }
+  @-webkit-keyframes glitch-animation-2 {
+    0% {
+      clip: rect(93px, 350px, 96px, 30px);
+    }
+    5% {
+      clip: rect(86px, 350px, 103px, 30px);
+    }
+    10% {
+      clip: rect(47px, 350px, 53px, 30px);
+    }
+    15% {
+      clip: rect(36px, 350px, 130px, 30px);
+    }
+    20% {
+      clip: rect(115px, 350px, 57px, 30px);
+    }
+    25% {
+      clip: rect(35px, 350px, 61px, 30px);
+    }
+    30% {
+      clip: rect(20px, 350px, 136px, 30px);
+    }
+    35% {
+      clip: rect(90px, 350px, 102px, 30px);
+    }
+    40% {
+      clip: rect(64px, 350px, 33px, 30px);
+    }
+    45% {
+      clip: rect(57px, 350px, 123px, 30px);
+    }
+    50% {
+      clip: rect(129px, 350px, 103px, 30px);
+    }
+    55% {
+      clip: rect(85px, 350px, 90px, 30px);
+    }
+    60% {
+      clip: rect(62px, 350px, 64px, 30px);
+    }
+    65% {
+      clip: rect(108px, 350px, 46px, 30px);
+    }
+    70% {
+      clip: rect(97px, 350px, 86px, 30px);
+    }
+    75% {
+      clip: rect(81px, 350px, 65px, 30px);
+    }
+    80% {
+      clip: rect(15px, 350px, 132px, 30px);
+    }
+    85% {
+      clip: rect(99px, 350px, 25px, 30px);
+    }
+    90% {
+      clip: rect(76px, 350px, 80px, 30px);
+    }
+    95% {
+      clip: rect(50px, 350px, 94px, 30px);
+    }
+    100% {
+      clip: rect(77px, 350px, 136px, 30px);
+    }
+  }
+  @keyframes glitch-animation-2 {
+    0% {
+      clip: rect(93px, 350px, 96px, 30px);
+    }
+    5% {
+      clip: rect(86px, 350px, 103px, 30px);
+    }
+    10% {
+      clip: rect(47px, 350px, 53px, 30px);
+    }
+    15% {
+      clip: rect(36px, 350px, 130px, 30px);
+    }
+    20% {
+      clip: rect(115px, 350px, 57px, 30px);
+    }
+    25% {
+      clip: rect(35px, 350px, 61px, 30px);
+    }
+    30% {
+      clip: rect(20px, 350px, 136px, 30px);
+    }
+    35% {
+      clip: rect(90px, 350px, 102px, 30px);
+    }
+    40% {
+      clip: rect(64px, 350px, 33px, 30px);
+    }
+    45% {
+      clip: rect(57px, 350px, 123px, 30px);
+    }
+    50% {
+      clip: rect(129px, 350px, 103px, 30px);
+    }
+    55% {
+      clip: rect(85px, 350px, 90px, 30px);
+    }
+    60% {
+      clip: rect(62px, 350px, 64px, 30px);
+    }
+    65% {
+      clip: rect(108px, 350px, 46px, 30px);
+    }
+    70% {
+      clip: rect(97px, 350px, 86px, 30px);
+    }
+    75% {
+      clip: rect(81px, 350px, 65px, 30px);
+    }
+    80% {
+      clip: rect(15px, 350px, 132px, 30px);
+    }
+    85% {
+      clip: rect(99px, 350px, 25px, 30px);
+    }
+    90% {
+      clip: rect(76px, 350px, 80px, 30px);
+    }
+    95% {
+      clip: rect(50px, 350px, 94px, 30px);
+    }
+    100% {
+      clip: rect(77px, 350px, 136px, 30px);
+    }
+  }
+  #s2 {
+    width: 100%;
+    height: 100vh;
+    color: white;
+  }
+  #s2 .s2-contents {
+    color: white;
+  }
+  #s2 h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #s2 .line {
+    display: block;
+    height: 1px;
+    width: 120px;
+    background-color: red;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1537,173 +1970,251 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
     margin: auto;
-    background-color: #F2F2F2;
-    height: 50vh;
-    width: 100%;
+    margin-top: 2em;
   }
-  .container .headline-image img {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .container .headline-two {
+  #s2 p {
+    text-align: center;
+    width: 370px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin: auto;
-    width: 400px;
-    padding-top: 8em;
-  }
-  .container .headline-two p {
     padding-top: 3em;
-    font-size: 2.5em;
-    padding-bottom: 3.2em;
+    font-size: .9em;
+    line-height: 25px;
   }
-  .container .headline-two .headline-two-cta .arrow-right {
-    margin-left: 12px;
-    height: 8px;
-    width: 8px;
+  #s2 ul {
+    padding-top: 8em;
+    padding-bottom: 10em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .container .headline-two .headline-two-cta a {
-    letter-spacing: -0.5px;
-    font-size: 1.2em;
+  #s2 ul li {
+    padding-top: 4em;
+    list-style: none;
+  }
+  #s2 ul li img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    height: 45px;
+  }
+  #s2 ul li p {
+    width: 200px;
+    font-size: .9em;
+  }
+  #s3 {
+    margin-top: 5em;
+    width: 100vw;
+    height: 300px;
+    background-image: url(../assets/s3.png);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #s3 p {
+    color: white;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    font-size: .9em;
+  }
+  #s4 {
+    overflow: hidden;
+    margin-top: 10em;
+    color: white;
+    height: 130vh;
+  }
+  #s4 li {
+    list-style: none;
+    -webkit-filter: saturate(0);
+            filter: saturate(0);
+    opacity: .8;
+  }
+  #s4 h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    font-size: 2em;
+  }
+  #s4 .s4-image-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    padding-top: 10em;
+    overflow: hidden;
+  }
+  #s4 .s4-image-container .row-one {
+    padding-right: 2em;
+  }
+  #s4 .s4-image-container .s4-one {
+    height: 300px;
+    background-color: gray;
+    background-image: url(../assets/s4-one.png);
+    cursor: pointer;
+  }
+  #s4 .s4-image-container .s4-two {
+    margin-top: 10em;
+    height: 350px;
+    width: 300px;
+    background-color: gray;
+    background-image: url(../assets/s4-two.png);
+    cursor: pointer;
+  }
+  #s4 .s4-image-container .s4-three {
+    height: 350px;
+    width: 300px;
+    background-color: gray;
+    background-image: url(../assets/s4-two.png);
+    cursor: pointer;
+  }
+  #s4 .s4-image-container .s4-four {
+    margin-top: 10em;
+    height: 500px;
+    width: 300px;
+    background-color: gray;
+    background-image: url(../assets/s4-one.png);
+    cursor: pointer;
+  }
+  footer {
+    height: 400px;
+    background-color: rgba(30, 30, 30, 0.473);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: white;
+  }
+  footer .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-logo {
+    margin-right: 2em;
+  }
+  footer .footer-logo img {
+    height: 35px;
+  }
+  footer ul h3 {
+    font-size: .7em;
+  }
+  footer ul li {
+    text-transform: uppercase;
+    margin-top: 6px;
+    font-size: .6em;
+    list-style: none;
+    cursor: pointer;
+  }
+  footer ul .first {
+    padding-top: 1.2em;
+  }
+  footer .first-row {
+    padding-right: 5em;
+  }
+  footer .second-row {
+    padding-right: 5em;
+  }
+  #s1-about {
+    height: 40vh;
+  }
+  #s1-about .main-text-about {
+    padding-top: 3em;
+    font-size: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    color: white;
+    width: 300px;
+  }
+  #s1-about .line {
+    display: block;
+    height: 1px;
+    width: 120px;
+    background-color: red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    margin-top: 1em;
+  }
+  #s2-about {
+    height: 50vh;
+    overflow: hidden;
+  }
+  #s2-about .s2-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-decoration: none;
   }
-  .container .headline-two .headline-two-cta h3 {
-    text-transform: uppercase;
-    color: black;
-    -webkit-transition: .6s;
-    transition: .6s;
-  }
-  .container .headline-two .headline-two-cta h3:hover {
-    margin-right: 15px;
-  }
-  .container footer .links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: auto;
-    padding-bottom: 5em;
-  }
-  .container footer .links :nth-child(2) {
-    margin-left: 2em;
-  }
-  .container footer .links :nth-child(3) {
-    margin-left: 2em;
-  }
-  .container footer .links a {
-    font-size: 0.8em;
-    color: black;
-    text-decoration: none;
-  }
-  .container footer .hover-underline-animation {
-    display: inline-block;
-    position: relative;
-  }
-  .container footer .hover-underline-animation:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #000000;
-    -webkit-transform-origin: bottom right;
-            transform-origin: bottom right;
-    -webkit-transition: -webkit-transform 0.25s ease-out;
-    transition: -webkit-transform 0.25s ease-out;
-    transition: transform 0.25s ease-out;
-    transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
-  }
-  .container footer .hover-underline-animation:hover:after {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    -webkit-transform-origin: bottom left;
-            transform-origin: bottom left;
-  }
-  .headline-work {
-    padding: 4em;
-    padding-bottom: 10em;
-  }
-  .headline-work h1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: auto;
-    font-size: 6em;
-    padding-bottom: 1.2em;
-    font-weight: 500;
-  }
-  .headline-work .project-container {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: auto;
-  }
-  .headline-work .project-container .first {
-    min-width: 100vw;
-    height: 500px;
-    background-color: black;
-  }
-  .headline-work .project-container .second {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .headline-work .project-container .second .one {
-    background-color: green;
-    height: 300px;
-    width: 50vw;
-  }
-  .headline-work .project-container .second .two {
-    background-color: yellow;
+  #s2-about .s2-container .side-one .row-one .one img {
     height: 200px;
-    width: 50vw;
   }
-  .headline-contact {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: auto;
-    width: 390px;
-    padding-bottom: 12em;
+  #s2-about .s2-container .side-two {
+    padding-left: 3em;
   }
-  .headline-contact .contents {
-    display: block;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: auto;
+  #s2-about .s2-container .side-two .two p {
+    width: 300px;
+    color: white;
+    text-align: left;
+    font-size: .9em;
+    line-height: 22px;
   }
-  .headline-contact .message {
-    padding-top: 2em;
-    font-size: 1.8em;
-    padding-bottom: 1.4em;
+  #s2-about .s2-container .side-two .two .line {
+    height: 1px;
+    width: 120px;
+    background-color: white;
+    margin-top: 3em;
   }
-  .headline-contact .email {
-    font-size: 1.5em;
-    display: block;
+  #s2-about .s2-container .side-two .two a {
+    text-decoration: none;
+    color: red;
   }
-  .headline-contact .email-button {
-    display: none;
+  #s2-about .s2-container .side-two .two a h3 {
+    text-transform: uppercase;
+    padding-top: 3em;
+    padding-right: 4em;
   }
 }
 /*# sourceMappingURL=styles.css.map */
