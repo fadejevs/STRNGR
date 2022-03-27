@@ -53,6 +53,28 @@ body video::-webkit-media-controls {
   }
 }
 
+@-webkit-keyframes anim {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@keyframes anim {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
 @font-face {
   font-family: vcr;
   src: url(../assets/vcr.ttf);
@@ -149,17 +171,6 @@ header nav .right ul a {
 #s1 .icon svg .arrow {
   -webkit-animation: anim .35s ease-in alternate infinite;
           animation: anim .35s ease-in alternate infinite;
-}
-
-@-webkit-keyframes anim {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
 }
 
 @keyframes anim {
@@ -508,6 +519,8 @@ header nav .right ul a {
 }
 
 #s2 .line {
+  -webkit-animation: anim .35s ease-in alternate infinite;
+          animation: anim .35s ease-in alternate infinite;
   display: block;
   height: 1px;
   width: 120px;
@@ -604,6 +617,7 @@ header nav .right ul a {
 }
 
 #s4 h3 {
+  text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -686,6 +700,11 @@ footer .footer-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
 }
 
 footer .footer-logo {
@@ -771,7 +790,7 @@ button {
 }
 
 #s1-about {
-  height: 55vh;
+  height: 40vh;
 }
 
 #s1-about .main-text-about {
@@ -801,62 +820,9 @@ button {
   margin-top: 3em;
 }
 
-#s2-about {
-  height: 70vh;
-  overflow: hidden;
-}
-
-#s2-about .s2-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#s2-about .s2-container .side-one .row-one .one img {
-  -webkit-filter: saturate(0);
-          filter: saturate(0);
-  height: 300px;
-}
-
-#s2-about .s2-container .side-two {
-  padding-left: 5em;
-}
-
-#s2-about .s2-container .side-two .two p {
-  width: 400px;
-  color: white;
-  text-align: left;
-  font-size: 1.2em;
-  line-height: 22px;
-}
-
-#s2-about .s2-container .side-two .two .line {
-  height: 1px;
-  width: 120px;
-  background-color: white;
-  margin-top: 3em;
-}
-
-#s2-about .s2-container .side-two .two a {
-  text-decoration: none;
-  color: red;
-}
-
-#s2-about .s2-container .side-two .two a h3 {
-  text-transform: uppercase;
-  padding-top: 3em;
-  padding-right: 4em;
-}
-
 #s3-about {
   height: 100%;
-  padding-bottom: 10em;
+  padding-bottom: 12em;
   color: white;
 }
 
@@ -875,6 +841,8 @@ button {
 }
 
 #s3-about .top-part .line {
+  -webkit-animation: anim .35s ease-in alternate infinite;
+          animation: anim .35s ease-in alternate infinite;
   margin: auto;
   height: 1px;
   width: 120px;
@@ -969,7 +937,7 @@ button {
 
 #s3-about .us .nicky .text p {
   padding-top: 1.4em;
-  width: 400px;
+  width: 420px;
   line-height: 25px;
 }
 
@@ -1053,6 +1021,60 @@ button {
   padding-top: 1.4em;
   width: 380px;
   line-height: 25px;
+}
+
+#s2-about {
+  height: 70vh;
+  overflow: hidden;
+  margin-bottom: 4em;
+}
+
+#s2-about .s2-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#s2-about .s2-container .side-one .row-one .one img {
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+  height: 300px;
+}
+
+#s2-about .s2-container .side-two {
+  padding-left: 5em;
+}
+
+#s2-about .s2-container .side-two .two p {
+  width: 400px;
+  color: white;
+  text-align: left;
+  font-size: 1em;
+  line-height: 22px;
+}
+
+#s2-about .s2-container .side-two .two .line {
+  height: 1px;
+  width: 120px;
+  background-color: white;
+  margin-top: 3em;
+}
+
+#s2-about .s2-container .side-two .two a {
+  text-decoration: none;
+  color: red;
+}
+
+#s2-about .s2-container .side-two .two a h3 {
+  text-transform: uppercase;
+  padding-top: 3em;
+  padding-right: 4em;
 }
 
 #s1-services {
@@ -1342,7 +1364,7 @@ button {
 #s1-contact .title h1 {
   padding-top: 2em;
   font-size: 3em;
-  color: white;
+  color: #00FFFF;
 }
 
 #s2-contact {
@@ -1354,11 +1376,12 @@ button {
 }
 
 #s2-contact h1 {
-  color: black;
+  color: #00FFFF;
 }
 
 #s2-contact .main-panel {
-  background: white;
+  background: transparent;
+  border: 1px solid red;
   padding: 36px;
   width: 480px;
   text-align: center;
@@ -1371,12 +1394,14 @@ button {
 }
 
 #s2-contact .main-panel form textarea {
+  border: 1px solid red;
+  color: #00FFFF;
+  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
   margin-top: 2em;
-  border: 1px solid lightgrey;
   padding: 16px;
   width: 300px;
   outline: 0;
@@ -1386,14 +1411,33 @@ button {
   font-family: vcr;
 }
 
+#s2-contact .main-panel form ::-webkit-input-placeholder {
+  color: red;
+}
+
+#s2-contact .main-panel form :-ms-input-placeholder {
+  color: red;
+}
+
+#s2-contact .main-panel form ::-ms-input-placeholder {
+  color: red;
+}
+
+#s2-contact .main-panel form ::placeholder {
+  color: red;
+}
+
 #s2-contact .main-panel form button {
+  cursor: pointer;
   margin-left: 11em;
   margin-top: 6em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  background-color: #00FFFF;
+  background-color: transparent;
+  border: 1px solid #00FFFF;
+  color: #00FFFF;
 }
 
 #s1-start {
@@ -1498,17 +1542,20 @@ button {
   display: flex;
   text-align: center;
   margin-top: 2em;
-  border: 1px solid lightgrey;
+  border: 1px solid red;
+  background: transparent;
   padding: 16px;
   width: 550px;
   font-size: 18px;
   height: 56px;
   font-family: vcr;
+  color: #00FFFF;
 }
 
 #s2-start form .checkbox {
+  border: 1px solid red;
+  background-color: transparent;
   margin-top: 2em;
-  background-color: white;
   width: 550px;
   padding: 16px;
   display: -webkit-box;
@@ -1528,7 +1575,7 @@ button {
 
 #s2-start form .checkbox label {
   margin-left: 2em;
-  color: black;
+  color: white;
 }
 
 #s2-start form button {
@@ -1550,9 +1597,9 @@ button {
     position: fixed;
     right: 30px;
     bottom: 30px;
-    padding: 20px;
+    padding: 14px;
     font-family: vcr;
-    font-size: 16px;
+    font-size: 10px;
     background-color: white;
     color: black;
     -webkit-box-align: center;
@@ -1560,7 +1607,7 @@ button {
             align-items: center;
   }
   header {
-    padding-top: 6em;
+    padding-top: 5em;
     padding-left: 2em;
     padding-right: 1em;
   }
@@ -1594,8 +1641,8 @@ button {
     display: flex;
   }
   header nav .right ul li {
-    margin-left: 4px;
-    width: 60px;
+    margin-left: 2.5px;
+    width: 80px;
     height: 30px;
   }
   header nav .right ul a {
@@ -1606,6 +1653,13 @@ button {
     padding-top: 2.5em;
   }
   #s1 h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
     text-transform: uppercase;
     font-size: 2em !important;
     color: white;
@@ -1625,7 +1679,7 @@ button {
   }
   #s1 a h3 {
     text-transform: uppercase;
-    padding-top: 4em;
+    padding-top: 2em;
     float: none;
     padding-right: 0em;
   }
@@ -1731,7 +1785,7 @@ button {
     width: 100%;
     height: 100%;
     color: white;
-    padding-top: 2em;
+    padding-top: 0em;
     margin-bottom: 5em;
   }
   #s2 .s2-contents {
@@ -1762,7 +1816,7 @@ button {
   }
   #s2 p {
     text-align: center;
-    width: 300px;
+    width: 250px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1773,7 +1827,7 @@ button {
   }
   #s2 ul {
     padding-top: 4em;
-    padding-bottom: 10em;
+    padding-bottom: 7em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1866,7 +1920,7 @@ button {
     cursor: pointer;
   }
   #s4 .s4-image-container .s4-two {
-    margin-top: 10em;
+    margin-top: 8em;
     height: 350px;
     width: 150px;
     background-color: gray;
@@ -1883,7 +1937,7 @@ button {
     cursor: pointer;
   }
   #s4 .s4-image-container .s4-four {
-    margin-top: 10em;
+    margin-top: 8em;
     height: 400px;
     width: 150px;
     background-color: gray;
@@ -1894,7 +1948,8 @@ button {
     display: none;
   }
   #s1-about {
-    height: 20vh;
+    height: 15vh;
+    margin-bottom: 1em;
   }
   #s1-about .main-text-about {
     padding-top: 3em;
@@ -1908,57 +1963,10 @@ button {
     margin: auto;
     color: white;
   }
-  #s2-about {
-    height: 36vh;
-    overflow: hidden;
-  }
-  #s2-about .s2-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  #s2-about .s2-container .side-one .row-one .one img {
-    -webkit-filter: saturate(0);
-            filter: saturate(0);
-    height: 100px;
-  }
-  #s2-about .s2-container .side-two {
-    padding-left: 1em;
-  }
-  #s2-about .s2-container .side-two .two p {
-    width: 200px;
-    color: white;
-    text-align: left;
-    font-size: .5em;
-    line-height: 15px;
-  }
-  #s2-about .s2-container .side-two .two .line {
-    height: 1px;
-    width: 120px;
-    background-color: white;
-    margin-top: 1em;
-  }
-  #s2-about .s2-container .side-two .two a {
-    text-decoration: none;
-    color: red;
-  }
-  #s2-about .s2-container .side-two .two a h3 {
-    text-transform: uppercase;
-    padding-top: 2em;
-    padding-right: .8em;
-    font-size: .7em;
-    width: 200px;
-  }
   #s3-about {
     height: 100%;
     padding-top: 0em;
-    padding-bottom: 10em;
+    padding-bottom: 8em;
     color: white;
   }
   #s3-about .top-part {
@@ -1989,7 +1997,7 @@ button {
     margin: auto;
   }
   #s3-about .us .julija {
-    padding-top: 5em;
+    padding-top: 4.5em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2154,6 +2162,53 @@ button {
     font-size: .5em;
     width: 170px;
   }
+  #s2-about {
+    height: 30vh;
+    overflow: hidden;
+  }
+  #s2-about .s2-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #s2-about .s2-container .side-one .row-one .one img {
+    -webkit-filter: saturate(0);
+            filter: saturate(0);
+    height: 100px;
+  }
+  #s2-about .s2-container .side-two {
+    padding-left: 1em;
+  }
+  #s2-about .s2-container .side-two .two p {
+    width: 200px;
+    color: white;
+    text-align: left;
+    font-size: .5em;
+    line-height: 15px;
+  }
+  #s2-about .s2-container .side-two .two .line {
+    height: 1px;
+    width: 120px;
+    background-color: white;
+    margin-top: 1em;
+  }
+  #s2-about .s2-container .side-two .two a {
+    text-decoration: none;
+    color: red;
+  }
+  #s2-about .s2-container .side-two .two a h3 {
+    text-transform: uppercase;
+    padding-top: 2em;
+    padding-right: .8em;
+    font-size: .7em;
+    width: 200px;
+  }
   #s1-services {
     height: 100%;
     display: -webkit-box;
@@ -2185,7 +2240,7 @@ button {
   #s2-services {
     height: 100%;
     padding-top: 5em;
-    padding-bottom: 5em;
+    padding-bottom: 3em;
   }
   #s2-services .title {
     color: white;
@@ -2200,6 +2255,8 @@ button {
     font-size: 1.4em;
   }
   #s2-services .title .line {
+    -webkit-animation: anim .35s ease-in alternate infinite;
+            animation: anim .35s ease-in alternate infinite;
     display: block;
     height: 1px;
     width: 120px;
@@ -2308,6 +2365,8 @@ button {
     font-size: 1.4em;
   }
   #s3-services .top .line {
+    -webkit-animation: anim .35s ease-in alternate infinite;
+            animation: anim .35s ease-in alternate infinite;
     height: 1px;
     width: 120px;
     background-color: red;
@@ -2391,10 +2450,11 @@ button {
     display: grid;
   }
   #s2-contact h1 {
-    color: black;
+    color: #00FFFF;
   }
   #s2-contact .main-panel {
-    background: white;
+    background: transparent;
+    border: 1px solid red;
     padding: 36px;
     width: 300px;
     text-align: center;
@@ -2406,6 +2466,9 @@ button {
     margin: auto;
   }
   #s2-contact .main-panel form textarea {
+    border: 1px solid red;
+    color: #00FFFF;
+    background-color: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2415,7 +2478,6 @@ button {
             justify-content: center;
     margin: auto;
     margin-top: 2em;
-    border: 1px solid lightgrey;
     padding: 16px;
     width: 200px;
     outline: 0;
@@ -2532,7 +2594,8 @@ button {
     display: flex;
     text-align: center;
     margin-top: 2em;
-    border: 1px solid lightgrey;
+    border: 1px solid red;
+    background: transparent;
     padding: 16px;
     width: 300px;
     outline: 0;
@@ -2540,10 +2603,12 @@ button {
     resize: none;
     height: 56px;
     font-family: vcr;
+    color: #00FFFF;
   }
   #s2-start form .checkbox {
     margin-top: 2em;
-    background-color: white;
+    border: 1px solid red;
+    background-color: transparent;
     width: 300px;
     padding: 16px;
     display: -webkit-box;
@@ -2564,7 +2629,7 @@ button {
   }
   #s2-start form .checkbox label {
     margin-left: 2em;
-    color: black;
+    color: white;
   }
   #s2-start form button {
     display: inline;
