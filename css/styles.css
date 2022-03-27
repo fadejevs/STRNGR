@@ -10,7 +10,7 @@ body {
   font-family: vcr;
   -webkit-animation: flicker 1.2s;
           animation: flicker 1.2s;
-  letter-spacing: .8px;
+  letter-spacing: .7px;
 }
 
 body video::-webkit-media-controls {
@@ -65,6 +65,9 @@ header {
 }
 
 header nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,7 +490,7 @@ header nav .right ul a {
 
 #s2 {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   color: white;
 }
 
@@ -572,6 +575,7 @@ header nav .right ul a {
 }
 
 #s3 p {
+  text-transform: uppercase;
   color: white;
   width: 650px;
   text-align: center;
@@ -699,7 +703,7 @@ footer ul h3 {
 footer ul li {
   text-transform: uppercase;
   margin-top: 6px;
-  font-size: .7em;
+  font-size: .65em;
   list-style: none;
   cursor: pointer;
 }
@@ -851,7 +855,8 @@ button {
 }
 
 #s3-about {
-  height: 350vh;
+  height: 100%;
+  padding-bottom: 10em;
   color: white;
 }
 
@@ -916,14 +921,14 @@ button {
 }
 
 #s3-about .us .julija .text h2 {
-  padding-top: 1.6em;
+  padding-top: 1.2em;
   color: #00FFFF;
 }
 
 #s3-about .us .julija .text p {
-  padding-top: 1.4em;
+  padding-top: 1.5em;
   width: 400px;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 #s3-about .us .nicky {
@@ -965,7 +970,7 @@ button {
 #s3-about .us .nicky .text p {
   padding-top: 1.4em;
   width: 400px;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 #s3-about .us .ralfs {
@@ -998,14 +1003,14 @@ button {
 }
 
 #s3-about .us .ralfs .text h2 {
-  padding-top: 1.6em;
+  padding-top: 1.2em;
   color: #00FFFF;
 }
 
 #s3-about .us .ralfs .text p {
   padding-top: 1.4em;
   width: 400px;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 #s3-about .us .philip {
@@ -1046,13 +1051,13 @@ button {
 
 #s3-about .us .philip .text p {
   padding-top: 1.4em;
-  width: 400px;
-  line-height: 30px;
+  width: 380px;
+  line-height: 25px;
 }
 
 #s1-services {
   height: 100vh;
-  padding-top: 2em;
+  padding-top: 5em;
 }
 
 #s1-services .top-content {
@@ -1066,18 +1071,21 @@ button {
 }
 
 #s1-services .left-side {
-  padding-top: 3em;
-  margin-right: 5em;
+  padding-top: 2em;
+}
+
+#s1-services .right-side {
+  margin-left: 4em;
 }
 
 #s1-services .right-side h1 {
-  text-align: right;
+  text-align: left;
   display: -ms-grid;
   display: grid;
   color: white;
   font-size: 3em;
-  float: right;
-  padding-top: 2em;
+  float: none;
+  padding-top: 1em;
 }
 
 #s1-services .right-side h1 span {
@@ -1092,10 +1100,10 @@ button {
 }
 
 #s1-services .right-side p {
-  width: 430px;
-  margin-top: 18em;
+  width: 400px;
+  margin-top: 3em;
   color: white;
-  text-align: right;
+  text-align: left;
   line-height: 20px;
 }
 
@@ -1107,12 +1115,13 @@ button {
 
 #s1-services .right-side a h3 {
   text-transform: uppercase;
-  padding-top: 3em;
-  float: right;
+  padding-top: 2em;
 }
 
 #s2-services {
-  height: 85vh;
+  height: 100%;
+  padding-top: 2em;
+  padding-bottom: 5em;
 }
 
 #s2-services .title {
@@ -1156,14 +1165,14 @@ button {
 
 #s2-services .content p {
   text-align: center;
-  width: 720px;
+  width: 740px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
   padding-top: 1em;
   font-size: 1.1em;
-  line-height: 25px;
+  line-height: 20px;
   color: white;
 }
 
@@ -1229,7 +1238,8 @@ button {
 }
 
 #s3-services {
-  height: 230vh;
+  height: 100%;
+  padding-bottom: 10em;
 }
 
 #s3-services .top {
@@ -1258,8 +1268,17 @@ button {
   padding-top: 9em;
 }
 
+#s3-services .content #two {
+  text-align: right;
+}
+
 #s3-services .content #two p {
-  width: 290px;
+  width: 275px;
+}
+
+#s3-services .content #two .text {
+  padding-left: 0;
+  padding-right: 3em;
 }
 
 #s3-services .content .item {
@@ -1278,7 +1297,7 @@ button {
 #s3-services .content .item .text {
   padding-left: 3em;
   color: white;
-  padding-top: 3em;
+  padding-top: 2em;
 }
 
 #s3-services .content .item .text h1 {
@@ -1305,21 +1324,12 @@ button {
   text-align: left;
 }
 
-#s3-services .content .item-two {
-  text-align: right;
-}
-
-#s3-services .content .item-two .text {
-  padding-left: 0;
-  padding-right: 3em;
-}
-
 #s1-contact {
-  height: 100px;
+  height: 200px;
 }
 
 #s1-contact .title {
-  padding-top: 3em;
+  padding-top: 4em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1336,7 +1346,9 @@ button {
 }
 
 #s2-contact {
-  height: 100vh;
+  height: 100%;
+  padding-top: 5em;
+  padding-bottom: 5em;
   display: -ms-grid;
   display: grid;
 }
@@ -1381,6 +1393,7 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  background-color: #00FFFF;
 }
 
 #s1-start {
@@ -1440,10 +1453,12 @@ button {
 }
 
 #s2-start {
-  height: 130vh;
+  height: 100%;
+  padding-bottom: 5em;
 }
 
 #s2-start h1 {
+  text-transform: uppercase;
   padding-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1451,7 +1466,6 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: auto;
   font-size: 2em;
   color: #00FFFF;
 }
@@ -1461,12 +1475,6 @@ button {
   height: 1px;
   width: 120px;
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: auto;
   margin-top: 3em;
 }
@@ -1492,10 +1500,8 @@ button {
   margin-top: 2em;
   border: 1px solid lightgrey;
   padding: 16px;
-  width: 300px;
-  outline: 0;
+  width: 550px;
   font-size: 18px;
-  resize: none;
   height: 56px;
   font-family: vcr;
 }
@@ -1503,7 +1509,7 @@ button {
 #s2-start form .checkbox {
   margin-top: 2em;
   background-color: white;
-  width: 300px;
+  width: 550px;
   padding: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1512,9 +1518,6 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 #s2-start form .checkbox input {
@@ -1535,17 +1538,36 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  color: black;
+  background-color: #00FFFF;
 }
 
 @media all and (max-width: 600px) {
-  button {
-    display: none;
+  body {
+    letter-spacing: .2px;
+  }
+  #switcher-tv {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    padding: 20px;
+    font-family: vcr;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header {
-    padding-top: 4em;
-    padding-left: 3em;
+    padding-top: 6em;
+    padding-left: 2em;
+    padding-right: 1em;
   }
   header nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1553,16 +1575,18 @@ button {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  header nav .home {
+    display: none;
+  }
   header nav li {
-    margin-right: 1em;
     color: white;
     list-style: none;
     text-transform: uppercase;
     font-size: .6em;
   }
   header nav .left img {
-    height: 30px;
-    width: 90px;
+    height: 20px;
+    width: 60px;
   }
   header nav .right ul {
     display: -webkit-box;
@@ -1570,41 +1594,51 @@ button {
     display: flex;
   }
   header nav .right ul li {
-    width: 80px;
+    margin-left: 4px;
+    width: 60px;
     height: 30px;
-    text-align: center;
   }
   header nav .right ul a {
     text-decoration: none;
   }
   #s1 {
-    padding-left: .8em;
-    padding-top: 6em;
+    padding-left: 0em;
+    padding-top: 2.5em;
   }
   #s1 h1 {
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 2em !important;
     color: white;
-    width: 400px;
+    width: 350px;
   }
   #s1 a {
+    text-decoration: none;
+    color: red;
+    font-size: .8em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    text-decoration: none;
-    color: red;
-    font-size: 1em;
+    margin: auto;
   }
   #s1 a h3 {
     text-transform: uppercase;
-    padding-top: 3em;
+    padding-top: 4em;
+    float: none;
+    padding-right: 0em;
   }
   #s1 .icon {
-    position: relative;
-    margin: 100px auto 0 auto;
+    margin: 150px auto 0 auto;
+    padding-top: 1.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
   }
   #s1 .icon svg {
     width: 30px;
@@ -1636,13 +1670,13 @@ button {
     }
   }
   #s1 .glitch {
-    font-weight: 800;
+    font-weight: 600;
     position: relative;
-    font-size: 100px;
-    padding: 30px;
+    font-size: 35px;
+    padding: 40px;
   }
   #s1 .glitch::before, #s1 .glitch::after {
-    padding: 30px;
+    padding: 50px;
     color: white;
     content: "< You Des";
     position: absolute;
@@ -1682,275 +1716,29 @@ button {
     -webkit-animation-direction: reverse-alternate;
             animation-direction: reverse-alternate;
   }
-  @-webkit-keyframes glitch-animation-1 {
-    0% {
-      clip: rect(149px, 350px, 144px, 30px);
-    }
-    5% {
-      clip: rect(23px, 350px, 9px, 30px);
-    }
-    10% {
-      clip: rect(43px, 350px, 132px, 30px);
-    }
-    15% {
-      clip: rect(57px, 350px, 77px, 30px);
-    }
-    20% {
-      clip: rect(114px, 350px, 147px, 30px);
-    }
-    25% {
-      clip: rect(33px, 350px, 45px, 30px);
-    }
-    30% {
-      clip: rect(93px, 350px, 42px, 30px);
-    }
-    35% {
-      clip: rect(42px, 350px, 53px, 30px);
-    }
-    40% {
-      clip: rect(91px, 350px, 101px, 30px);
-    }
-    45% {
-      clip: rect(115px, 350px, 23px, 30px);
-    }
-    50% {
-      clip: rect(36px, 350px, 31px, 30px);
-    }
-    55% {
-      clip: rect(38px, 350px, 133px, 30px);
-    }
-    60% {
-      clip: rect(56px, 350px, 4px, 30px);
-    }
-    65% {
-      clip: rect(41px, 350px, 116px, 30px);
-    }
-    70% {
-      clip: rect(86px, 350px, 17px, 30px);
-    }
-    75% {
-      clip: rect(100px, 350px, 138px, 30px);
-    }
-    80% {
-      clip: rect(116px, 350px, 42px, 30px);
-    }
-    85% {
-      clip: rect(37px, 350px, 138px, 30px);
-    }
-    90% {
-      clip: rect(54px, 350px, 70px, 30px);
-    }
-    95% {
-      clip: rect(18px, 350px, 123px, 30px);
-    }
-    100% {
-      clip: rect(141px, 350px, 4px, 30px);
-    }
-  }
-  @keyframes glitch-animation-1 {
-    0% {
-      clip: rect(149px, 350px, 144px, 30px);
-    }
-    5% {
-      clip: rect(23px, 350px, 9px, 30px);
-    }
-    10% {
-      clip: rect(43px, 350px, 132px, 30px);
-    }
-    15% {
-      clip: rect(57px, 350px, 77px, 30px);
-    }
-    20% {
-      clip: rect(114px, 350px, 147px, 30px);
-    }
-    25% {
-      clip: rect(33px, 350px, 45px, 30px);
-    }
-    30% {
-      clip: rect(93px, 350px, 42px, 30px);
-    }
-    35% {
-      clip: rect(42px, 350px, 53px, 30px);
-    }
-    40% {
-      clip: rect(91px, 350px, 101px, 30px);
-    }
-    45% {
-      clip: rect(115px, 350px, 23px, 30px);
-    }
-    50% {
-      clip: rect(36px, 350px, 31px, 30px);
-    }
-    55% {
-      clip: rect(38px, 350px, 133px, 30px);
-    }
-    60% {
-      clip: rect(56px, 350px, 4px, 30px);
-    }
-    65% {
-      clip: rect(41px, 350px, 116px, 30px);
-    }
-    70% {
-      clip: rect(86px, 350px, 17px, 30px);
-    }
-    75% {
-      clip: rect(100px, 350px, 138px, 30px);
-    }
-    80% {
-      clip: rect(116px, 350px, 42px, 30px);
-    }
-    85% {
-      clip: rect(37px, 350px, 138px, 30px);
-    }
-    90% {
-      clip: rect(54px, 350px, 70px, 30px);
-    }
-    95% {
-      clip: rect(18px, 350px, 123px, 30px);
-    }
-    100% {
-      clip: rect(141px, 350px, 4px, 30px);
-    }
-  }
-  @-webkit-keyframes glitch-animation-2 {
-    0% {
-      clip: rect(93px, 350px, 96px, 30px);
-    }
-    5% {
-      clip: rect(86px, 350px, 103px, 30px);
-    }
-    10% {
-      clip: rect(47px, 350px, 53px, 30px);
-    }
-    15% {
-      clip: rect(36px, 350px, 130px, 30px);
-    }
-    20% {
-      clip: rect(115px, 350px, 57px, 30px);
-    }
-    25% {
-      clip: rect(35px, 350px, 61px, 30px);
-    }
-    30% {
-      clip: rect(20px, 350px, 136px, 30px);
-    }
-    35% {
-      clip: rect(90px, 350px, 102px, 30px);
-    }
-    40% {
-      clip: rect(64px, 350px, 33px, 30px);
-    }
-    45% {
-      clip: rect(57px, 350px, 123px, 30px);
-    }
-    50% {
-      clip: rect(129px, 350px, 103px, 30px);
-    }
-    55% {
-      clip: rect(85px, 350px, 90px, 30px);
-    }
-    60% {
-      clip: rect(62px, 350px, 64px, 30px);
-    }
-    65% {
-      clip: rect(108px, 350px, 46px, 30px);
-    }
-    70% {
-      clip: rect(97px, 350px, 86px, 30px);
-    }
-    75% {
-      clip: rect(81px, 350px, 65px, 30px);
-    }
-    80% {
-      clip: rect(15px, 350px, 132px, 30px);
-    }
-    85% {
-      clip: rect(99px, 350px, 25px, 30px);
-    }
-    90% {
-      clip: rect(76px, 350px, 80px, 30px);
-    }
-    95% {
-      clip: rect(50px, 350px, 94px, 30px);
-    }
-    100% {
-      clip: rect(77px, 350px, 136px, 30px);
-    }
-  }
-  @keyframes glitch-animation-2 {
-    0% {
-      clip: rect(93px, 350px, 96px, 30px);
-    }
-    5% {
-      clip: rect(86px, 350px, 103px, 30px);
-    }
-    10% {
-      clip: rect(47px, 350px, 53px, 30px);
-    }
-    15% {
-      clip: rect(36px, 350px, 130px, 30px);
-    }
-    20% {
-      clip: rect(115px, 350px, 57px, 30px);
-    }
-    25% {
-      clip: rect(35px, 350px, 61px, 30px);
-    }
-    30% {
-      clip: rect(20px, 350px, 136px, 30px);
-    }
-    35% {
-      clip: rect(90px, 350px, 102px, 30px);
-    }
-    40% {
-      clip: rect(64px, 350px, 33px, 30px);
-    }
-    45% {
-      clip: rect(57px, 350px, 123px, 30px);
-    }
-    50% {
-      clip: rect(129px, 350px, 103px, 30px);
-    }
-    55% {
-      clip: rect(85px, 350px, 90px, 30px);
-    }
-    60% {
-      clip: rect(62px, 350px, 64px, 30px);
-    }
-    65% {
-      clip: rect(108px, 350px, 46px, 30px);
-    }
-    70% {
-      clip: rect(97px, 350px, 86px, 30px);
-    }
-    75% {
-      clip: rect(81px, 350px, 65px, 30px);
-    }
-    80% {
-      clip: rect(15px, 350px, 132px, 30px);
-    }
-    85% {
-      clip: rect(99px, 350px, 25px, 30px);
-    }
-    90% {
-      clip: rect(76px, 350px, 80px, 30px);
-    }
-    95% {
-      clip: rect(50px, 350px, 94px, 30px);
-    }
-    100% {
-      clip: rect(77px, 350px, 136px, 30px);
-    }
+  #s1 .glitch::before, #s1 .glitch::after {
+    margin-top: .8em;
+    padding: 10px;
+    color: white;
+    content: "< You Des";
+    position: absolute;
+    background: black;
+    overflow: hidden;
+    top: 0;
   }
   #s2 {
+    overflow: hidden;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     color: white;
+    padding-top: 2em;
+    margin-bottom: 5em;
   }
   #s2 .s2-contents {
     color: white;
   }
   #s2 h2 {
+    font-size: .9em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1974,17 +1762,17 @@ button {
   }
   #s2 p {
     text-align: center;
-    width: 370px;
+    width: 300px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin: auto;
     padding-top: 3em;
-    font-size: .9em;
-    line-height: 25px;
+    font-size: .65em;
+    line-height: 20px;
   }
   #s2 ul {
-    padding-top: 8em;
+    padding-top: 4em;
     padding-bottom: 10em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2017,7 +1805,7 @@ button {
   }
   #s3 {
     margin-top: 5em;
-    width: 100vw;
+    width: 100%;
     height: 300px;
     background-image: url(../assets/s3.png);
     display: -webkit-box;
@@ -2025,17 +1813,19 @@ button {
     display: flex;
   }
   #s3 p {
+    line-height: 20px;
     color: white;
-    width: 400px;
+    width: 200px;
     text-align: center;
     margin: auto;
     font-size: .9em;
   }
   #s4 {
     overflow: hidden;
-    margin-top: 10em;
+    margin-top: 6em;
     color: white;
-    height: 130vh;
+    height: 100%;
+    padding-bottom: 10em;
   }
   #s4 li {
     list-style: none;
@@ -2051,7 +1841,7 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
     margin: auto;
-    font-size: 2em;
+    font-size: 1.5em;
   }
   #s4 .s4-image-container {
     display: -webkit-box;
@@ -2061,94 +1851,54 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
     margin: auto;
-    padding-top: 10em;
+    padding-top: 6em;
     overflow: hidden;
   }
   #s4 .s4-image-container .row-one {
-    padding-right: 2em;
+    padding-right: .8em;
   }
   #s4 .s4-image-container .s4-one {
-    height: 300px;
+    height: 250px;
+    width: 150px;
     background-color: gray;
     background-image: url(../assets/s4-one.png);
+    background-size: cover;
     cursor: pointer;
   }
   #s4 .s4-image-container .s4-two {
     margin-top: 10em;
     height: 350px;
-    width: 300px;
+    width: 150px;
     background-color: gray;
     background-image: url(../assets/s4-two.png);
+    background-size: cover;
     cursor: pointer;
   }
   #s4 .s4-image-container .s4-three {
     height: 350px;
-    width: 300px;
+    width: 150px;
     background-color: gray;
-    background-image: url(../assets/s4-two.png);
+    background-image: url(../assets/s4-three.png);
+    background-size: cover;
     cursor: pointer;
   }
   #s4 .s4-image-container .s4-four {
     margin-top: 10em;
-    height: 500px;
-    width: 300px;
+    height: 400px;
+    width: 150px;
     background-color: gray;
-    background-image: url(../assets/s4-one.png);
+    background-image: url(../assets/s4-four.png);
     cursor: pointer;
   }
   footer {
-    height: 400px;
-    background-color: rgba(30, 30, 30, 0.473);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    color: white;
-  }
-  footer .footer-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  footer .footer-logo {
-    margin-right: 2em;
-  }
-  footer .footer-logo img {
-    height: 35px;
-  }
-  footer ul h3 {
-    font-size: .7em;
-  }
-  footer ul li {
-    text-transform: uppercase;
-    margin-top: 6px;
-    font-size: .6em;
-    list-style: none;
-    cursor: pointer;
-  }
-  footer ul .first {
-    padding-top: 1.2em;
-  }
-  footer .first-row {
-    padding-right: 5em;
-  }
-  footer .second-row {
-    padding-right: 5em;
+    display: none;
   }
   #s1-about {
-    height: 40vh;
+    height: 20vh;
   }
   #s1-about .main-text-about {
     padding-top: 3em;
-    font-size: 3em;
+    font-size: 1.5em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2157,9 +1907,299 @@ button {
             justify-content: center;
     margin: auto;
     color: white;
-    width: 300px;
   }
-  #s1-about .line {
+  #s2-about {
+    height: 36vh;
+    overflow: hidden;
+  }
+  #s2-about .s2-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #s2-about .s2-container .side-one .row-one .one img {
+    -webkit-filter: saturate(0);
+            filter: saturate(0);
+    height: 100px;
+  }
+  #s2-about .s2-container .side-two {
+    padding-left: 1em;
+  }
+  #s2-about .s2-container .side-two .two p {
+    width: 200px;
+    color: white;
+    text-align: left;
+    font-size: .5em;
+    line-height: 15px;
+  }
+  #s2-about .s2-container .side-two .two .line {
+    height: 1px;
+    width: 120px;
+    background-color: white;
+    margin-top: 1em;
+  }
+  #s2-about .s2-container .side-two .two a {
+    text-decoration: none;
+    color: red;
+  }
+  #s2-about .s2-container .side-two .two a h3 {
+    text-transform: uppercase;
+    padding-top: 2em;
+    padding-right: .8em;
+    font-size: .7em;
+    width: 200px;
+  }
+  #s3-about {
+    height: 100%;
+    padding-top: 0em;
+    padding-bottom: 10em;
+    color: white;
+  }
+  #s3-about .top-part {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  #s3-about .top-part .s3-about-title {
+    color: #00FFFF;
+    font-size: 1em;
+  }
+  #s3-about .top-part .line {
+    margin: auto;
+    height: 1px;
+    width: 120px;
+    background-color: white;
+    margin-top: 1em;
+  }
+  #s3-about .us {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  #s3-about .us .julija {
+    padding-top: 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #s3-about .us .julija .photo img {
+    height: 180px;
+  }
+  #s3-about .us .julija .text {
+    padding-left: 2em;
+  }
+  #s3-about .us .julija .text h1 {
+    font-size: 1em;
+  }
+  #s3-about .us .julija .text span {
+    color: red;
+  }
+  #s3-about .us .julija .text .line {
+    height: 1px;
+    width: 120px;
+    background-color: white;
+    margin-top: 1em;
+  }
+  #s3-about .us .julija .text h2 {
+    font-size: .6em;
+    padding-top: 1.6em;
+    color: #00FFFF;
+  }
+  #s3-about .us .julija .text p {
+    font-size: .5em;
+    padding-top: 1.5em;
+    width: 150px;
+    line-height: 12px;
+  }
+  #s3-about .us .nicky {
+    padding-top: 6em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #s3-about .us .nicky .photo img {
+    height: 180px;
+  }
+  #s3-about .us .nicky .text {
+    text-align: right;
+    padding-right: 2em;
+  }
+  #s3-about .us .nicky .text h1 {
+    font-size: 1em;
+  }
+  #s3-about .us .nicky .text span {
+    color: red;
+  }
+  #s3-about .us .nicky .text .line {
+    height: 1px;
+    width: 120px;
+    background-color: white;
+    margin-top: 1em;
+  }
+  #s3-about .us .nicky .text h2 {
+    font-size: .6em;
+    padding-top: 3em;
+    color: #00FFFF;
+  }
+  #s3-about .us .nicky .text p {
+    padding-top: 1.4em;
+    line-height: 15px;
+    font-size: .5em;
+    width: 160px;
+  }
+  #s3-about .us .ralfs {
+    padding-top: 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #s3-about .us .ralfs .photo img {
+    height: 180px;
+  }
+  #s3-about .us .ralfs .text {
+    padding-left: 2em;
+  }
+  #s3-about .us .ralfs .text h1 {
+    font-size: 1em;
+  }
+  #s3-about .us .ralfs .text span {
+    color: red;
+  }
+  #s3-about .us .ralfs .text .line {
+    height: 1px;
+    width: 120px;
+    background-color: white;
+    margin-top: 1em;
+  }
+  #s3-about .us .ralfs .text h2 {
+    font-size: .6em;
+    padding-top: 1.6em;
+    color: #00FFFF;
+  }
+  #s3-about .us .ralfs .text p {
+    font-size: .5em;
+    padding-top: 1.5em;
+    width: 180px;
+    line-height: 15px;
+  }
+  #s3-about .us .philip {
+    padding-top: 6em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #s3-about .us .philip .photo img {
+    height: 180px;
+  }
+  #s3-about .us .philip .text {
+    text-align: right;
+    padding-right: 2em;
+  }
+  #s3-about .us .philip .text h1 {
+    font-size: 1em;
+  }
+  #s3-about .us .philip .text span {
+    color: red;
+  }
+  #s3-about .us .philip .text .line {
+    height: 1px;
+    width: 120px;
+    background-color: white;
+    margin-top: 1em;
+  }
+  #s3-about .us .philip .text h2 {
+    font-size: .6em;
+    padding-top: 3em;
+    color: #00FFFF;
+  }
+  #s3-about .us .philip .text p {
+    padding-top: 1.4em;
+    line-height: 15px;
+    font-size: .5em;
+    width: 170px;
+  }
+  #s1-services {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    padding-top: 5em;
+    padding-bottom: 3em;
+  }
+  #s1-services .left-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    padding-top: 0em;
+  }
+  #s1-services .left-side video {
+    height: 200px;
+  }
+  #s1-services .right-side {
+    display: none;
+  }
+  #s2-services {
+    height: 100%;
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+  #s2-services .title {
+    color: white;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  #s2-services .title h1 {
+    font-size: 1.4em;
+  }
+  #s2-services .title .line {
     display: block;
     height: 1px;
     width: 120px;
@@ -2171,50 +2211,369 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
     margin: auto;
-    margin-top: 1em;
+    margin-top: 2em;
   }
-  #s2-about {
-    height: 50vh;
-    overflow: hidden;
+  #s2-services .content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
   }
-  #s2-about .s2-container {
+  #s2-services .content p {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    padding-top: 1em;
+    font-size: 1em;
+    line-height: 15px;
+    color: white;
+  }
+  #s2-services .content ul {
+    padding-top: 5em;
+    padding-bottom: 10em;
+    display: -ms-grid;
+    display: grid;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #s2-services .content ul .one {
+    padding-right: 0em;
+  }
+  #s2-services .content ul .two {
+    padding-left: 0em;
+    padding-top: 4em;
+  }
+  #s2-services .content ul .three {
+    padding-top: 4em;
+    padding-left: 0em;
+  }
+  #s2-services .content ul li {
+    list-style: none;
+  }
+  #s2-services .content ul li img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: auto;
+    height: 25px;
+  }
+  #s2-services .content ul li p {
+    width: 200px;
+  }
+  #s2-services .content ul li .line-under {
+    padding-top: 2em;
+  }
+  #s2-services .content ul li .line-under .line {
+    height: 1px;
+    width: 120px;
+    background-color: #00FFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  #s2-services .content ul li .under {
+    padding-top: 2em;
+    width: 280px;
+    font-size: .8em;
+  }
+  #s3-services {
+    height: 100%;
+    padding-top: 1em;
+    padding-bottom: 8em;
+  }
+  #s3-services .top {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    color: white;
+  }
+  #s3-services .top h1 {
+    font-size: 1.4em;
+  }
+  #s3-services .top .line {
+    height: 1px;
+    width: 120px;
+    background-color: red;
+    margin: auto;
+    margin-top: 2em;
+  }
+  #s3-services .content {
+    padding-top: 5em;
+  }
+  #s3-services .content #two p {
+    width: 200px;
+  }
+  #s3-services .content .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  #s2-about .s2-container .side-one .row-one .one img {
-    height: 200px;
-  }
-  #s2-about .s2-container .side-two {
-    padding-left: 3em;
-  }
-  #s2-about .s2-container .side-two .two p {
-    width: 300px;
+  #s3-services .content .item .text {
+    padding-left: 2em;
     color: white;
-    text-align: left;
-    font-size: .9em;
-    line-height: 22px;
+    padding-top: 3em;
   }
-  #s2-about .s2-container .side-two .two .line {
+  #s3-services .content .item .text h1 {
+    color: #00FFFF;
+    font-size: 1em;
+  }
+  #s3-services .content .item .text p {
+    padding-top: 2em;
+    width: 150px;
+    line-height: 15px;
+    font-size: .5em;
+  }
+  #s3-services .content .item .image img {
+    height: 100px;
+  }
+  #s3-services .content :nth-child(2) {
+    padding-top: 3em;
+  }
+  #s3-services .content :nth-child(3) {
+    padding-top: 5em;
+    text-align: left;
+  }
+  #s3-services .content .item-two {
+    text-align: right;
+  }
+  #s3-services .content .item-two .text {
+    padding-left: 0;
+    padding-right: 1.6em !important;
+  }
+  #s1-contact {
+    height: 150px;
+    padding-bottom: 3em;
+  }
+  #s1-contact .title {
+    padding-top: 0em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #s1-contact .title h1 {
+    padding-top: 3em;
+    font-size: 1.5em;
+    color: white;
+  }
+  #s2-contact {
+    padding-top: 0em;
+    padding-top: 0em;
+    padding-bottom: 1em;
+    display: -ms-grid;
+    display: grid;
+  }
+  #s2-contact h1 {
+    color: black;
+  }
+  #s2-contact .main-panel {
+    background: white;
+    padding: 36px;
+    width: 300px;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  #s2-contact .main-panel form textarea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    margin-top: 2em;
+    border: 1px solid lightgrey;
+    padding: 16px;
+    width: 200px;
+    outline: 0;
+    font-size: 18px;
+    resize: none;
+    height: 56px;
+    font-family: vcr;
+  }
+  #s2-contact .main-panel form button {
+    display: inline;
+    margin-left: 11em;
+    margin-top: 6em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  #s1-start {
+    height: 50vh;
+    padding-top: 3em;
+  }
+  #s1-start h1 {
+    padding-top: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    font-size: 1.5em;
+    color: white;
+  }
+  #s1-start h1 span {
+    padding-left: .5em;
+    padding-right: .5em;
+    color: #00FFFF;
+  }
+  #s1-start p {
+    padding-top: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    width: 250px;
+    text-align: center;
+    color: white;
+    font-size: .8em;
+  }
+  #s1-start a {
+    text-decoration: none;
+    color: red;
+    font-size: 1em;
+  }
+  #s1-start a h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    text-transform: uppercase;
+    padding-top: 3em;
+  }
+  #s2-start {
+    height: 100%;
+    padding-top: 0em;
+    padding-bottom: 10em;
+  }
+  #s2-start h1 {
+    padding-top: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    font-size: 1em;
+    color: #00FFFF;
+  }
+  #s2-start .line {
+    display: block;
     height: 1px;
     width: 120px;
     background-color: white;
-    margin-top: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    margin-top: 2em;
   }
-  #s2-about .s2-container .side-two .two a {
-    text-decoration: none;
-    color: red;
+  #s2-start form {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
   }
-  #s2-about .s2-container .side-two .two a h3 {
-    text-transform: uppercase;
-    padding-top: 3em;
-    padding-right: 4em;
+  #s2-start form #first {
+    margin-bottom: 2em;
+  }
+  #s2-start form textarea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    margin-top: 2em;
+    border: 1px solid lightgrey;
+    padding: 16px;
+    width: 300px;
+    outline: 0;
+    font-size: 18px;
+    resize: none;
+    height: 56px;
+    font-family: vcr;
+  }
+  #s2-start form .checkbox {
+    margin-top: 2em;
+    background-color: white;
+    width: 300px;
+    padding: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #s2-start form .checkbox input {
+    border-radius: 50px;
+    width: 15px;
+    height: 15px;
+  }
+  #s2-start form .checkbox label {
+    margin-left: 2em;
+    color: black;
+  }
+  #s2-start form button {
+    display: inline;
+    margin-left: 11em;
+    margin-top: 6em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
   }
 }
 /*# sourceMappingURL=styles.css.map */
